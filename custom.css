@@ -32,7 +32,7 @@
     color: rgb(202, 196, 201);
 }
 .D3DXDc {
-    fill: rgb(202, 196, 201);
+    fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.KKjvXb:not(.tuKyod) > .t5F5nf,
 .PL5Wwe.qs41qe:not(.tuKyod) > .t5F5nf {
@@ -72,18 +72,18 @@
     height: 0px;
 }
 #XMLID_8_-Clipped{
-    opacity: 0.8;
-    fill: #fff;
+    opacity: 0.8 !important;
+    fill: #fff !important;
 }
 .PL5Wwe.H7du2 .DQy0Rb {
-    fill: #fff;
+    fill: #fff !important;
 }
 .DQy0Rb {
-    fill: rgb(202, 196, 201);
+    fill: rgb(202, 196, 201) !important;
 }
 .QeRfYe {
-    fill: rgb(202, 196, 201);
+    fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.H7du2 .QeRfYe {
-    fill: #fff;
+    fill: #fff !important;
 }
