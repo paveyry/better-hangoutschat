@@ -85,9 +85,7 @@
     font-size: 24px;
 }
 /* Inline emojis size */
-.iiJ4W {
-    height: 1.2em !important;
-    max-height: 1.2em !important;
-    min-width: 1.2em !important;
-    width: 1.2em !important;
+img {
+    border: none;
+    font-size: 1.3em !important;
 }
