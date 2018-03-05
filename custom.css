@@ -89,3 +89,7 @@ img {
     border: none;
     font-size: 1.3em !important;
 }
+/* White text color for selected channel name */
+.PL5Wwe.KKjvXb .t5F5nf, .PL5Wwe.KKjvXb .sFuxxd, .PL5Wwe.qs41qe .t5F5nf, .PL5Wwe.qs41qe .sFuxxd, .GSEpfc .t5F5nf {
+    color: #fff;
+}
