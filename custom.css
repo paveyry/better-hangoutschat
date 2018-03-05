@@ -1,41 +1,45 @@
 .X9KLPc {
-    background-color: #4d394b !important;
+    background-color: #4d394b;
 }
 .PL5Wwe.KKjvXb:not(.tuKyod),
 .PL5Wwe.qs41qe:not(.tuKyod) {
-    background-color: #4C9689 !important;
+    background-color: #4C9689;
 }
 .t5F5nf {
-    color: rgb(202, 196, 201) !important;
+    color: rgb(202, 196, 201);
 }
 .PL5Wwe:focus,
 .PL5Wwe:hover:not(.tuKyod),
 .tuKyod:hover .LoYJxb {
-    background-color: #3e313c !important;
+    background-color: #3e313c;
 }
 .PL5Wwe.H7du2 .t5F5nf {
-    color: #fff !important;
+    color: #fff;
 }
 .sFuxxd {
-    color: rgb(202, 196, 201) !important;
+    color: rgb(202, 196, 201);
 }
+.PL5Wwe.H7du2 .sFuxxd {
+    color: #fff;
+}
+
 .aOHsTc {
-    color: rgb(202, 196, 201) !important;
-    font-size: 16px !important;
-    margin-left: 16px !important;
+    color: rgb(202, 196, 201);
+    font-size: 16px;
+    margin-left: 16px;
 }
 .HLTcjb {
-    color: rgb(202, 196, 201) !important;
+    color: rgb(202, 196, 201);
 }
 .D3DXDc {
-    fill: rgb(202, 196, 201) !important;
+    fill: rgb(202, 196, 201);
 }
 .PL5Wwe.KKjvXb:not(.tuKyod) > .t5F5nf,
 .PL5Wwe.qs41qe:not(.tuKyod) > .t5F5nf {
-    color: #fff !important;
+    color: #fff;
 }
 .Riuhhf {
-    background-color: #4d394b !important;
+    background-color: #4d394b;
 }
 .LoYJxb {
     height: 26px;
@@ -68,6 +72,18 @@
     height: 0px;
 }
 #XMLID_8_-Clipped{
-    opacity: 0.8 !important;
-    fill: #fff !important;
+    opacity: 0.8;
+    fill: #fff;
+}
+.PL5Wwe.H7du2 .DQy0Rb {
+    fill: #fff;
+}
+.DQy0Rb {
+    fill: rgb(202, 196, 201);
+}
+.QeRfYe {
+    fill: rgb(202, 196, 201);
+}
+.PL5Wwe.H7du2 .QeRfYe {
+    fill: #fff;
 }
