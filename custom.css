@@ -16,13 +16,6 @@
 .PL5Wwe.H7du2 .t5F5nf {
     color: #fff;
 }
-.sFuxxd {
-    color: rgb(202, 196, 201);
-}
-.PL5Wwe.H7du2 .sFuxxd {
-    color: #fff;
-}
-
 .aOHsTc {
     color: rgb(202, 196, 201);
     font-size: 16px;
@@ -54,13 +47,6 @@
     border-top: solid 1px #e0e0e0;
     padding-top: 6px;
 }
-.iiJ4W {
-    height: 0.8em;
-    margin: 0 2px;
-    max-height: 0.8em;
-    min-width: 0.8em;
-    width: 0.8em;
-}
 .MhXXcc {
     line-height: 24px;
  }
@@ -75,11 +61,18 @@
     opacity: 0.8 !important;
     fill: #fff !important;
 }
-.PL5Wwe.H7du2 .DQy0Rb {
-    fill: #fff !important;
+/* Time and menu buttons and clock for channels inactive and active colors */
+.sFuxxd {
+    color: rgb(202, 196, 201);
+}
+.PL5Wwe.H7du2 .sFuxxd {
+    color: #fff;
 }
 .DQy0Rb {
     fill: rgb(202, 196, 201) !important;
+}
+.PL5Wwe.H7du2 .DQy0Rb {
+    fill: #fff !important;
 }
 .QeRfYe {
     fill: rgb(202, 196, 201) !important;
@@ -87,6 +80,11 @@
 .PL5Wwe.H7du2 .QeRfYe {
     fill: #fff !important;
 }
+/* Big emojis size */
+.Zc1Emd.NM3Nfc {
+    font-size: 24px;
+}
+/* Inline emojis size */
 .iiJ4W {
     height: 1.2em !important;
     max-height: 1.2em !important;
