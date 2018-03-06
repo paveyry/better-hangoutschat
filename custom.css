@@ -93,3 +93,61 @@ img {
 .PL5Wwe.KKjvXb .t5F5nf, .PL5Wwe.KKjvXb .sFuxxd, .PL5Wwe.qs41qe .t5F5nf, .PL5Wwe.qs41qe .sFuxxd, .GSEpfc .t5F5nf {
     color: #fff;
 }
+/* Reduce top and left margins in thread blocks */
+.GVSFtd {
+    margin-left: 16px;
+}
+.jGyvbd {
+    border: none;
+    padding: 13px 10px 0 0;
+}
+/* Add border and reduce reply button size and margins */
+.m3sLHf {
+    font-size: .8rem;
+    font-weight: 500;
+    bottom: 5px;
+    padding: 0px 15px 0px 12px;
+    right: 8px;
+    border-style: solid;
+    border-width: 2px;
+}
+.CKEQkc {
+    height: 28px;
+}
+.CKEQkc:hover:not(.RDPZE) .m3sLHf {
+   font-size:.8rem;
+   font-weight:500;
+   color:#fff !important;
+   background-color:#00897b;
+   border-color:#00897b;
+}
+.jGyvbd .jO0Dzb {
+    background: transparent;
+}
+.qiUDtb {
+    bottom: 4px;
+    position: relative;
+}
+/* Reduce space around blue NEW alert */
+.k1lILc {
+    padding: 5px 0 0;
+}
+.k1lILc + .ajCeRb {
+    padding-top: 5px;
+}
+/* Reduce space around "someone added someone" messages */
+.mCOR5e {
+    padding: 8px 0;
+}
+/* Prevent "new conversation" message from overlapping on the text */
+.pyNvz {
+    top: -33px;
+}
+/* Reduce space between thread blocks */
+.cZICLc {
+    margin-top: 6px;
+ }
+ /* Increase boldness of usenames in conversations */
+ .Z4BnXb {
+    font-weight: 900;
+ }
