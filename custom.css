@@ -187,7 +187,7 @@ img {
 }
 /* Reduce height of top bar */
 .gb_Jf > .gb_R {
-    height: 50px;
+    height: 50px !important;
 }
 .DWzK6d {
    height: 50px;
