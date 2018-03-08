@@ -195,3 +195,7 @@ img {
 .Jrbdv {
    height: 50px;
 }
+/* Reduce margin above "Starred" label */
+.aOHsTc {
+   margin-top: 5px;
+}
