@@ -1,52 +1,79 @@
+/* Sidebar color */
 .X9KLPc {
     background-color: #4d394b;
 }
+
+/* Active channel background color in sidebar*/
 .PL5Wwe.KKjvXb:not(.tuKyod),
 .PL5Wwe.qs41qe:not(.tuKyod) {
     background-color: #4C9689;
 }
+
+/* Channel name color in sidebar */
 .t5F5nf {
     color: rgb(202, 196, 201);
 }
+/* Sidebar elemtents bg color when hovering */
 .PL5Wwe:focus,
 .PL5Wwe:hover:not(.tuKyod),
 .tuKyod:hover .LoYJxb {
     background-color: #3e313c;
 }
+
+/* Sidebar elements text color for chans with unread messages */
 .PL5Wwe.H7du2 .t5F5nf {
     color: #fff;
 }
+
+/* Sidebar "recent" or "starred" section names text size and color */
 .aOHsTc {
     color: rgb(202, 196, 201);
     font-size: 16px;
     margin-left: 16px;
 }
+
+/* Sidebar Search section text color */
 .HLTcjb {
     color: rgb(202, 196, 201);
 }
 .D3DXDc {
     fill: rgb(202, 196, 201) !important;
 }
+
+/* Font color of active channel in sidebar */
 .PL5Wwe.KKjvXb:not(.tuKyod) > .t5F5nf,
 .PL5Wwe.qs41qe:not(.tuKyod) > .t5F5nf {
     color: #fff;
 }
+
+/* Top left corner section (with title) background color */
 .Riuhhf {
     background-color: #4d394b;
 }
+
+/* Sidebar channels elements height */
 .LoYJxb {
     height: 26px;
 }
+
+/* Padding height between messages in a thread */
 .nF6pT {
     padding-top: 6px;
 }
+
+/* Sidebar "recent" or "starred" section title padding height */
 .wJNchb, .nFzS9e {
     margin-top: 10px;
 }
+
+/* Draw white line between the sidebar sections and reduce padding */
 .PL5Wwe + .wJNchb, .teTAFe:not(.fXx9Lc) + .vHL80e .aOHsTc {
     border-top: solid 1px #e0e0e0;
     padding-top: 6px;
 }
+
+/* Vertically align triple dots buttons on
+   channels in sidebar with the new height */
 .MhXXcc {
     line-height: 20px;
  }
@@ -54,9 +81,13 @@
     height: 22px;
     width: 22px;
 }
+
+/* Margin at the bottom of all messages, on top of the New conversation button */
 .RPExGf {
     margin: 0px;
 }
+
+/* Chat top left logo text color */
 #XMLID_8_-Clipped{
     opacity: 0.8 !important;
     fill: #fff !important;
