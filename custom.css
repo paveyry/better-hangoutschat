@@ -45,13 +45,28 @@
     background-color: #3e313c;
 }
 
-/* Search Menu bg color */
+/* Search Menu bg color, shape and dimensions */
 .yoV6yd {
     background-color: #4d394b;
+    margin-top: -4px;
+    width: 100%;
+    border-radius: 0px;
+    -moz-border-radius: 0px
 }
 
 /* Search menu text color */
 .Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .ndJi5d, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
+    color: #fff;
+}
+
+/* Search Menu "frequent" section text color and size */
+.wAR34c {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Search menu people list mail color */
+.Kfe2Ub {
     color: #fff;
 }
 
