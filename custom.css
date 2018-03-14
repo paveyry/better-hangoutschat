@@ -70,6 +70,11 @@
     color: #fff;
 }
 
+/* Quick search first element bg color */
+.dQ2Tsf[aria-selected="true"] {
+   background: transparent;
+}
+
 /* Font color of active channel in sidebar */
 .PL5Wwe.KKjvXb:not(.tuKyod) > .t5F5nf,
 .PL5Wwe.qs41qe:not(.tuKyod) > .t5F5nf {
