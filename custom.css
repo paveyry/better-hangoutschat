@@ -55,8 +55,12 @@
 }
 
 /* Search menu text color */
-.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .ndJi5d, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
+.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
     color: #fff;
+}
+
+.ndJi5d {
+   rgba(0,0,0,0.38);
 }
 
 /* Search Menu "frequent" section text color and size */
