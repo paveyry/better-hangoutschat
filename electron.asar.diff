@@ -1,0 +1,53 @@
+--- a/electron.asar
++++ b/electron.asar
+@@ -6252,6 +6244,51 @@ const resolvePromise = Promise.resolve.bind(Promise)
+ // init.js, we need to restore it here.
+ process.argv.splice(1, 1)
+
++document.addEventListener("DOMContentLoaded", function() {
++   // Then get its webviews
++   let webviews = document.querySelectorAll("webview");
++
++   // Fetch our CSS in parallel ahead of time
++   const cssPath = 'https://raw.githubusercontent.com/paveyry/Slack-Theme-for-Hangouts-Chat/master/custom.css';
++   let cssPromise = fetch(cssPath).then(response => response.text());
++
++   let customCustomCSS = `
++   :root {
++      /* Modify these to change your theme colors: */
++      --primary: #09F;
++      --text: #CCC;
++      --background: #080808;
++      --background-elevated: #222;
++   }
++   `;
++
++   // Insert a style tag into the wrapper view
++   cssPromise.then(css => {
++      let s = document.createElement('style');
++      s.type = 'text/css';
++      s.innerHTML = css + customCustomCSS;
++      document.head.appendChild(s);
++   });
++
++   // Wait for each webview to load
++   webviews.forEach(webview => {
++      webview.addEventListener('ipc-message', message => {
++         if (message.channel == 'didFinishLoading')
++            // Finally add the CSS into the webview
++            cssPromise.then(css => {
++               let script = `
++               let s = document.createElement('style');
++               s.type = 'text/css';
++               s.id = 'slack-custom-css';
++               s.innerHTML = \`${css + customCustomCSS}\`;
++               document.head.appendChild(s);
++               `;
++               webview.executeJavaScript(script);
++            })
++      });
++   });
++});
++
+ // Clear search paths.
+ require('../common/reset-search-paths')
