@@ -1,11 +1,17 @@
-Slack Theme for Google Hangouts Chat
+Better Hangouts Chat
 ====================================
 
 This applies Slack's look and feel to your Google Hangouts Chat.
-You can apply it by injecting the CSS file in the page in your browser using
-an extension like Stylish for example.
-Or you can put `electron.asar` in `Chat.App/Contents/Resources` to use it
+To install, put `electron.asar` in `Chat.App/Contents/Resources` to use it
 in the Electron client.
+
+This also offers the possibility to add a sheet of custom emojis. The default
+patched `electron.asar` file in this repository only provides a few examples.
+If you want to add your own, just write a json emoji sheet following the
+example in this repository, and call the script to patch your own
+`electron.asar`:
+
+    ./patch_electron.sh /path/to/original/electron.asar /path/to/emojis.json
 
 Preview
 ========
