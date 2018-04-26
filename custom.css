@@ -272,3 +272,12 @@ img {
 .aOHsTc {
    margin-top: 5px;
 }
+
+/* Fix emojis dimensions */
+.iiJ4W {
+   height: auto;
+   width: auto;
+   max-height: 1.2em;
+   max-width: 1.2em;
+   min-width: auto;
+}
