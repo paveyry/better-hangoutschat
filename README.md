@@ -13,6 +13,9 @@ example in this repository, and call the script to patch your own
 
     ./patch_electron.sh /path/to/original/electron.asar /path/to/emojis.json
 
+The gmonkey script allows you to generate an emoji sheet from a slack team's
+existing emojis.
+
 Preview
 ========
 
