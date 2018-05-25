@@ -1,62 +1,62 @@
 /* Sidebar color */
 .X9KLPc {
-    background-color: #4d394b;
+   background-color: #4d394b;
 }
 
 /* Active channel background color in sidebar*/
 .PL5Wwe.KKjvXb:not(.tuKyod),
 .PL5Wwe.qs41qe:not(.tuKyod) {
-    background-color: #4C9689;
+   background-color: #4C9689;
 }
 
 /* Channel name color in sidebar */
 .t5F5nf {
-    color: rgb(202, 196, 201);
+   color: rgb(202, 196, 201);
 }
 /* Sidebar elemtents bg color when hovering */
 .PL5Wwe:focus,
 .PL5Wwe:hover:not(.tuKyod),
 .tuKyod:hover .LoYJxb {
-    background-color: #3e313c;
+   background-color: #3e313c;
 }
 
 /* Sidebar elements text color for chans with unread messages */
 .PL5Wwe.H7du2 .t5F5nf {
-    color: #fff;
+   color: #fff;
 }
 
 /* Sidebar "recent" or "starred" section names text size and color */
 .aOHsTc {
-    color: rgb(202, 196, 201);
-    font-size: 16px;
-    margin-left: 16px;
+   color: rgb(202, 196, 201);
+   font-size: 16px;
+   margin-left: 16px;
 }
 
 /* Sidebar Search section text color */
 .HLTcjb {
-    color: rgb(202, 196, 201);
+   color: rgb(202, 196, 201);
 }
 .D3DXDc {
-    fill: rgb(202, 196, 201) !important;
+   fill: rgb(202, 196, 201) !important;
 }
 
 /* Sidebar search button hovering bg color */
 .GbZFNe:focus, .GbZFNe:hover {
-    background-color: #3e313c;
+   background-color: #3e313c;
 }
 
 /* Search Menu bg color, shape and dimensions */
 .yoV6yd {
-    background-color: #4d394b;
-    margin-top: -4px;
-    width: 100%;
-    border-radius: 0px;
-    -moz-border-radius: 0px
+   background-color: #4d394b;
+   margin-top: -4px;
+   width: 100%;
+   border-radius: 0px;
+   -moz-border-radius: 0px
 }
 
 /* Search menu text color */
 .Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
-    color: #fff;
+   color: #fff;
 }
 
 .ndJi5d {
@@ -65,13 +65,13 @@
 
 /* Search Menu "frequent" section text color and size */
 .wAR34c {
-    color: #fff;
-    font-size: 16px;
+   color: #fff;
+   font-size: 16px;
 }
 
 /* Search menu people list mail color */
 .Kfe2Ub {
-    color: #fff;
+   color: #fff;
 }
 
 /* Quick search first element bg color */
@@ -82,7 +82,7 @@
 /* Font color of active channel in sidebar */
 .PL5Wwe.KKjvXb:not(.tuKyod) > .t5F5nf,
 .PL5Wwe.qs41qe:not(.tuKyod) > .t5F5nf {
-    color: #fff;
+   color: #fff;
 }
 
 /* Fix vertical alignment of top right corner buttons */
@@ -92,105 +92,105 @@
 
 /* Top left corner section (with title) background color */
 .Riuhhf {
-    background-color: #4d394b;
+   background-color: #4d394b;
 }
 
 /* Sidebar channels elements height */
 .LoYJxb {
-    height: 26px;
+   height: 26px;
 }
 
 /* Padding height between messages in a thread */
 .nF6pT {
-    padding-top: 6px;
+   padding-top: 6px;
 }
 
 /* Sidebar "recent" or "starred" section title padding height */
 .wJNchb, .nFzS9e {
-    margin-top: 10px;
+   margin-top: 10px;
 }
 
 /* Draw white line between the sidebar sections and reduce padding */
 .PL5Wwe + .wJNchb, .teTAFe:not(.fXx9Lc) + .vHL80e .aOHsTc {
-    border-top: solid 1px #e0e0e0;
-    padding-top: 6px;
+   border-top: solid 1px #e0e0e0;
+   padding-top: 6px;
 }
 
 /* Vertically align triple dots buttons on
-   channels in sidebar with the new height */
+channels in sidebar with the new height */
 .MhXXcc {
-    line-height: 20px;
- }
+   line-height: 20px;
+}
 .gsrV1e {
-    height: 22px;
-    width: 22px;
+   height: 22px;
+   width: 22px;
 }
 
 /* Margin at the bottom of all messages, on top of the New conversation button */
 .RPExGf {
-    margin: 0px;
+   margin: 0px;
 }
 
 /* Chat top left logo text color */
 #XMLID_8_-Clipped{
-    opacity: 0.8 !important;
-    fill: #fff !important;
+   opacity: 0.8 !important;
+   fill: #fff !important;
 }
 /* Time and menu buttons and clock for channels inactive and active colors */
 .sFuxxd {
-    color: rgb(202, 196, 201);
+   color: rgb(202, 196, 201);
 }
 .PL5Wwe.H7du2 .sFuxxd {
-    color: #fff;
+   color: #fff;
 }
 .DQy0Rb {
-    fill: rgb(202, 196, 201) !important;
+   fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.H7du2 .DQy0Rb {
-    fill: #fff !important;
+   fill: #fff !important;
 }
 .QeRfYe {
-    fill: rgb(202, 196, 201) !important;
+   fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.H7du2 .QeRfYe {
-    fill: #fff !important;
+   fill: #fff !important;
 }
 /* Big emojis size */
 .Zc1Emd.NM3Nfc {
-    font-size: 24px;
+   font-size: 24px;
 }
 /* Inline emojis size */
 img {
-    border: none;
-    font-size: 1.3em !important;
+   border: none;
+   font-size: 1.3em !important;
 }
 /* White text color for selected channel name */
 .PL5Wwe.KKjvXb .t5F5nf, .PL5Wwe.KKjvXb .sFuxxd, .PL5Wwe.qs41qe .t5F5nf, .PL5Wwe.qs41qe .sFuxxd, .GSEpfc .t5F5nf {
-    color: #fff;
+   color: #fff;
 }
 /* Reduce top and left margins in thread blocks */
 .GVSFtd {
-    margin-left: 16px;
+   margin-left: 16px;
 }
 .jGyvbd {
-    border: none;
-    padding: 13px 10px 0 0;
+   border: none;
+   padding: 13px 10px 0 0;
 }
 /* Add border and reduce reply button size and margins */
 .m3sLHf {
-    font-size: .8rem;
-    font-weight: 500;
-    bottom: 5px;
-    padding: 0px 15px 0px 12px;
-    right: 8px;
-    border-style: solid;
-    border-width: 2px;
+   font-size: .8rem;
+   font-weight: 500;
+   bottom: 5px;
+   padding: 0px 15px 0px 12px;
+   right: 8px;
+   border-style: solid;
+   border-width: 2px;
 }
 .dCMjy {
-    top: 0px;
+   top: 0px;
 }
 .CKEQkc {
-    height: 28px;
+   height: 28px;
 }
 .CKEQkc:hover:not(.RDPZE) .m3sLHf {
    font-size:.8rem;
@@ -200,61 +200,61 @@ img {
    border-color:#00897b;
 }
 .jGyvbd .jO0Dzb {
-    background: transparent;
+   background: transparent;
 }
 .qiUDtb {
-    bottom: 4px;
-    position: relative;
+   bottom: 4px;
+   position: relative;
 }
 /* Reduce space around blue NEW alert */
 .k1lILc {
-    padding: 5px 0 0;
+   padding: 5px 0 0;
 }
 .k1lILc + .ajCeRb {
-    padding-top: 5px;
+   padding-top: 5px;
 }
 /* Reduce space around "someone added someone" messages */
 .mCOR5e {
-    padding: 8px 0;
+   padding: 8px 0;
 }
 /* Prevent "new conversation" message from overlapping on the text */
 .pyNvz {
-    top: -33px;
+   top: -33px;
 }
 /* Reduce space between thread blocks */
 .cZICLc {
-    margin-top: 6px;
+   margin-top: 6px;
 }
- /* Increase boldness of usernames in conversations */
- .Z4BnXb {
-    font-weight: 900;
+/* Increase boldness of usernames in conversations */
+.Z4BnXb {
+   font-weight: 900;
 }
 /* Make code snippets look like slack's */
 .FMTudf {
-    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
-    font-size: .75rem;
-    border: 1px solid #e0e0e0;
-    margin: 10px 0;
-    padding: 3px 10px;
-    background: #f9f9f9;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+   font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
+   font-size: .75rem;
+   border: 1px solid #e0e0e0;
+   margin: 10px 0;
+   padding: 3px 10px;
+   background: #f9f9f9;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
 }
 /* Make messages take more width */
 .bzJiD .jGyvbd .QIJiHb, .bzJiD .jGyvbd .zX644e {
-    max-width: 95%;
+   max-width: 95%;
 }
 /* Make inline pre look like slack's */
 .U8d2H {
-    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
-    background-color: #f7f7f9;
-    margin: 0px;
-    padding: 1px 3px;
-    color: #d72b3f;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+   font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
+   background-color: #f7f7f9;
+   margin: 0px;
+   padding: 1px 3px;
+   color: #d72b3f;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
 }
 /* Reduce sidebar width */
 .X9KLPc, .Riuhhf {
@@ -262,7 +262,7 @@ img {
 }
 /* Reduce height of top bar */
 .gb_Jf > .gb_R {
-    height: 50px !important;
+   height: 50px !important;
 }
 .gb_Jf {
    height: 50px;
@@ -299,7 +299,13 @@ img {
 
 .BrQiad {
    max-width: none;
+   max-height: 450px;
    margin-top: 0px;
+}
+
+.BrQiad img {
+   height:450px!important;
+   width: auto!important;
 }
 
 .UtIMdd .RveJvd.snByac {
