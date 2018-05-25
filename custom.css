@@ -87,7 +87,7 @@
 
 /* Fix vertical alignment of top right corner buttons */
 .gb_Qf > .gb_R {
-   height: 50px;
+   max-height: 50px;
 }
 
 /* Top left corner section (with title) background color */
