@@ -85,6 +85,11 @@
     color: #fff;
 }
 
+/* Fix vertical alignment of top right corner buttons */
+.gb_Qf > .gb_R {
+   height: 50px;
+}
+
 /* Top left corner section (with title) background color */
 .Riuhhf {
     background-color: #4d394b;
@@ -220,7 +225,7 @@ img {
 .cZICLc {
     margin-top: 6px;
 }
- /* Increase boldness of usenames in conversations */
+ /* Increase boldness of usernames in conversations */
  .Z4BnXb {
     font-weight: 900;
 }
