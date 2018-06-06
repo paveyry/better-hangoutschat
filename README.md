@@ -20,6 +20,13 @@ can add emojis without having your users repatch their clients/browsers.
 The script `js/use_slack_emojis.js` is a greasemonkey script that allows you
 to generate an emoji sheet from a slack team's existing emojis.
 
+Update June 6th 2018: Google added a Content Security Policy HTTP header
+to Hangouts Chat, which means all the emoji content has to come from google
+servers.
+You can use the `emojis2drive.py` script to fetch all the images from your
+existing emoji sheet and use the Google Drive API to upload them all to drive
+and generate a new emoji sheet compliant with the CSP.
+
 Preview
 ========
 
