@@ -14,6 +14,9 @@ var replFunction = function(element) {
 };
 
 var linkFunction = function(elt) {
+   if (!window.location.href.includes("chat.google.com/room/")) {
+      return;
+   }
    var tmpdiv = document.createElement("div");
    var link = window.location.href+"/"+elt.getAttribute("data-topic-id");
    tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
