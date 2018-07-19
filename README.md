@@ -27,6 +27,9 @@ You can use the `emojis2drive.py` script to fetch all the images from your
 existing emoji sheet and use the Google Drive API to upload them all to drive
 and generate a new emoji sheet compliant with the CSP.
 
+Update July 19th 2018: The patched client now displays the link to the thread
+to simplify references in communication.
+
 Preview
 ========
 

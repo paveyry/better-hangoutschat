@@ -13,6 +13,13 @@ var replFunction = function(element) {
       });
 };
 
+var linkFunction = function(elt) {
+   var tmpdiv = document.createElement("div");
+   var link = window.location.href+"/"+elt.getAttribute("data-topic-id");
+   tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
+   elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
+};
+
 // insertion-query v1.0.3 (2016-01-20)
 // license:MIT
 // Zbyszek Tenerowicz <naugtur@gmail.com> (http://naugtur.pl/)
@@ -32,6 +39,14 @@ emojiPromise.then(gistdata => {
 
    insertionQ('.Zc1Emd').every(replFunction);
 });
+
+var topics = document.getElementsByClassName('cZICLc');
+var i;
+for (i = 0; i < topics.length; i++) {
+   linkFunction(topics[i]);
+}
+insertionQ('.cZICLc').every(linkFunction);
+
 
 // Then get its webviews
 let webviews = document.querySelectorAll("webview");
