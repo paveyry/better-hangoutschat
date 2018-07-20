@@ -14,7 +14,8 @@ var replFunction = function(element) {
 };
 
 var linkFunction = function(elt) {
-   if (!window.location.href.includes("chat.google.com/room/")) {
+   if (!RegExp("chat.google.com/.*room/").test(window.location.href)) {
+
       return;
    }
    var tmpdiv = document.createElement("div");
