@@ -12,7 +12,7 @@
 
 /* Reduce whitespace around New conversation button */
 .RnpT2b {
-   margin: 8px 0 8px 0;
+   margin: 4px 0 4px 0;
 }
 .IEIJqd {
    padding-top: 0;
@@ -261,4 +261,9 @@ img {
    max-height: 1.2em;
    max-width: 1.2em;
    min-width: auto;
+}
+
+/* Reduce size of New conv button */
+.SfqTBc {
+   padding: 4px 18px 4px 12px;
 }
