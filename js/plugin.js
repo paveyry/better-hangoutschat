@@ -1,7 +1,7 @@
 var emojis = {}
 
 var replFunction = function(element) {
-   element.innerHTML = element.innerHTML.replace(/:[^:]+:/gi,
+   element.innerHTML = element.innerHTML.replace(/:[a-zA-Z0-9_-]+:/gi,
       function (match) {
          var emojiName = match.slice(1, match.length - 1);
          if (emojiName in emojis) {
@@ -19,7 +19,7 @@ var linkFunction = function(elt) {
       return;
    }
    var tmpdiv = document.createElement("div");
-   var link = window.location.href+"/"+elt.getAttribute("data-topic-id");
+   var link = window.location.href.split("?")[0]+"/"+elt.getAttribute("data-topic-id");
    tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
    elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
 };
