@@ -13,15 +13,19 @@ var replFunction = function(element) {
       });
 };
 
-var linkFunction = function(elt) {
-   if (!RegExp("chat.google.com/.*room/").test(window.location.href)) {
+var urlreg = /.*(chat.google.com\/.*room\/[a-zA-Z0-9]+).*/g;
 
-      return;
+var linkFunction = function(elt) {
+   var loc = window.location.href;
+   var match = urlreg.exec(loc);
+   urlreg.lastIndex = 0;
+   if (match != null) {
+      var tmpdiv = document.createElement("div");
+      var link = "https://"+match[1]+"/"+elt.getAttribute("data-topic-id");
+      link = link.replace("search/", "");
+      tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
+      elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
    }
-   var tmpdiv = document.createElement("div");
-   var link = window.location.href.split("?")[0]+"/"+elt.getAttribute("data-topic-id");
-   tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
-   elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
 };
 
 // insertion-query v1.0.3 (2016-01-20)
