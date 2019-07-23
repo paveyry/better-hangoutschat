@@ -1,38 +1,34 @@
 #!/bin/bash
 
-set -e
+# Usage: ./generate_patch.sh [original_electron_file]
 
-[ -z $1 ] || [ -z $2 ] && echo "Usage: ./generate_patch.sh <original_electron_file> <emojis_gist_id>" && exit 1
+set -e
 
 DIR="$(mktemp -d)"
 PLUGINGEN="$(mktemp)"
 PLUGINGEN2="$(mktemp)"
 DEFAULTINIT="$(mktemp)"
-GISTID="$2"
+ASARFILE="$1"
 
-asar e "$1" "$DIR"
+[ -z "$ASARFILE" ] || asar e "$ASARFILE" "$DIR"
 
-mkdir -p out/theme
-mkdir -p out/emojisonly
+mkdir -p out/slacktheme
 
-cp "$DIR/renderer/init.js" $DEFAULTINIT
-
+[ -z "$ASARFILE" ] || cp "$DIR/renderer/init.js" $DEFAULTINIT
 
 generateFiles() {
    cat js/plugin.js \
       | sed "s/CSSURL/$1/g" \
-      | sed "s/GISTID/$GISTID/g" \
       > "$PLUGINGEN"
    echo "document.addEventListener(\"DOMContentLoaded\", function() {" > "$PLUGINGEN2"
    cat "$PLUGINGEN" >> "$PLUGINGEN2"
    echo "});" >> "$PLUGINGEN2"
-   sed -e "10r $PLUGINGEN2" $DEFAULTINIT > "$DIR/renderer/init.js"
+   [ -z "$ASARFILE" ] || sed -e "10r $PLUGINGEN2" $DEFAULTINIT > "$DIR/renderer/init.js"
    cat js/gmonkeyscript_template.js "$PLUGINGEN" > "$2/gmonkeyscript.js"
-   asar pack "$DIR" electron.asar
-   mv electron.asar "$2/electron.asar"
+   [ -z "$ASARFILE" ] || asar pack "$DIR" electron.asar
+   [ -z "$ASARFILE" ] || mv electron.asar "$2/electron.asar"
 }
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/custom.css" "out/theme"
-generateFiles "https:\/\/gist.githubusercontent.com\/devoxel\/359bacdd8d5a3600e10abfb56c21e6c3\/raw\/28f5c1644fcc99b86d2e742558e7bd7e4892b4eb\/emojifix.css" "out/emojisonly"
+generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/custom.css" "out/slacktheme"
 
 rm -rf "$DIR" "$DEFAULTINIT" "$PLUGINGEN" "$PLUGINGEN2"
