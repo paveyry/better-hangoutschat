@@ -65,4 +65,4 @@ the patched one:
 Preview
 --------
 
-![Screenshot](https://user-images.githubusercontent.com/3884900/61709663-0090f680-ad50-11e9-9e60-3acc69c87f97.png)
+![Screenshot](https://user-images.githubusercontent.com/3884900/61730969-c2f59300-ad7a-11e9-9cf3-65b0f5363693.png)
