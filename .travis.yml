@@ -1,0 +1,32 @@
+sudo: required
+language: node_js
+node_js:
+    - "10"
+dist: trusty
+
+before_install:
+    - sudo apt-get -qq update
+
+install:
+    - sudo apt-get install p7zip-full
+    - npm install -g asar
+
+before_script:
+    - wget https://dl.google.com/chat/latest/InstallHangoutsChat.dmg
+    - 7z x InstallHangoutsChat.dmg
+    - mkdir t
+    - sudo mount -oloop *.hfs t
+
+script:
+    - ./generate_patch.sh t/Chat.app/Contents/Resources/electron.asar
+
+deploy:
+    provider: releases
+    api_key: $TOKEN
+    file:
+        - "out/slacktheme/electron.asar"
+        - "out/slacktheme/gmonkeyscript.js"
+    skip-cleanup: true
+    on:
+        tags: true
+    name: Release $TRAVIS_TAG $(date +'%d.%m.%Y')
