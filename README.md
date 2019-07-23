@@ -19,6 +19,16 @@ Former features:
 
 - Custom emojis (broken for now)
 
+Installing from official release files
+---------------------------------------
+
+- Download the latest release from the 'releases' section:
+https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases
+- For the electron client: replace the official `electron.asar` with the patched one:
+`C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources` on Windows,
+`/Applications/Chat.app/Contents/Resources` on macOS
+- For the browser script, just paste the script in your greasemonkey or tampermonkey extension
+
 Generating Greasemonkey/Tampermonkey script
 --------------------------------------------
 
