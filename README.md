@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/paveyry/Slack-Theme-for-Hangouts-Chat.svg?branch=master)](https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases/latest)
+
 Better Hangouts Chat
 ====================================
 
