@@ -1,4 +1,4 @@
-var urlreg = /.*(chat.google.com\/.*room\/[a-zA-Z0-9_]+).*/g;
+var urlreg = /.*(chat.google.com\/.*room\/[a-zA-Z0-9_-]+).*/g;
 
 var linkFunction = function(elt) {
    var loc = window.location.href;
