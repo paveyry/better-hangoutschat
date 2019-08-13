@@ -300,3 +300,8 @@ img {
     height: 100px !important;
     width: auto !important;
 }
+
+/* Expand width for bot posts */
+.BrQiad {
+    max-width: 100%;
+}
