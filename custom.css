@@ -267,3 +267,36 @@ img {
 .SfqTBc {
    padding: 4px 18px 4px 12px;
 }
+
+/* Reduce height of link and file previews */
+.Pj9rof { /* global block */
+    height: 140px;
+    width: 500px;
+}
+.tHcB6b { /* image container */
+    height: 100px;
+}
+.rNTKFb { /* image (for files) */
+    height: 100px;
+}
+.kmatHb { /* text */
+    font-size: 12px;
+    line-height: 13px;
+}
+.SXFjfb { /* text container */
+    height: 40px;
+    padding-top: 3px;
+    padding-left: 15px;
+}
+.VEWZeb { /* icon next to text */
+    height: 16px;
+    margin-right: 0px;
+    margin-top: 2px;
+}
+.SXFjfb.DoYruc { /* text when there is also a link */
+    padding-top: 3px;
+}
+.rNTKFb.Tvakkc, .tHcB6b .wU0G2b, .rNTKFb.Tvakkc + .bBukm /* image (for links) */ {
+    height: 100px !important;
+    width: auto !important;
+}
