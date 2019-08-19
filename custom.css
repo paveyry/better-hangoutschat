@@ -10,6 +10,11 @@
    padding-right: 0px;
 }
 
+/* Reduce height of header bar */
+.DWzK6d, .gb_Uf > .gb_g, .gb_Uf, .Jrbdv {
+   height: 45px;
+}
+
 /* Reduce whitespace around New conversation button */
 .RnpT2b {
    margin: 4px 0 4px 0;
