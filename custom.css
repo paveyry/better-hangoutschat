@@ -129,7 +129,7 @@
 
 /* Padding height between messages in a thread */
 .nF6pT {
-   padding-top: 6px;
+   padding-top: 4px;
 }
 
 /* Sidebar "recent" or "starred" section title padding height */
@@ -230,13 +230,50 @@ img {
    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
    font-size: .75rem;
    border: 1px solid #e0e0e0;
-   margin: 10px 0;
+   margin: 1px 0;
    padding: 3px 10px;
    background: #f9f9f9;
    -webkit-border-radius: 4px;
    -moz-border-radius: 4px;
    border-radius: 4px;
 }
+/* Reduce the height of collapsed message row */
+.zh742e {
+    padding-top: 0;
+}
+
+/* Reduce margin around reaction emojis */
+.SFMExc, .FIgEvc {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Reduce margin around link previews */
+.V5MAMb {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Reduce size of youtube previews */
+.uXftcc, .CXTVff {
+    height: 240px;
+    background-size: auto 240px;
+}
+.uXftcc {
+    width: 320px;
+}
+
+/* Reduce size of youtube videos */
+.uXftcc > .gntfhc, .CXTVff > .gntfhc {
+    height: 240px;
+    width: auto;
+}
+
+/* Reduce margin below lowest message in thread */
+.jGyvbd > .nF6pT:last-child, .zh742e:last-child {
+    padding-bottom: 10px;
+}
+
 /* Make inline pre look like slack's */
 .U8d2H {
    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
