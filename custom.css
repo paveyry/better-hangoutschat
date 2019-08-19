@@ -266,6 +266,7 @@ img {
 /* Reduce size of New conv button */
 .SfqTBc {
    padding: 4px 18px 4px 12px;
+   min-height: 30px;
 }
 
 /* Reduce height of link and file previews */
