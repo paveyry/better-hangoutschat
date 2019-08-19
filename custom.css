@@ -40,12 +40,11 @@
 }
 
 /* Sidebar elemtents bg color when hovering */
-.PL5Wwe:focus,
-.PL5Wwe:hover:not(.tuKyod),
-.tuKyod:hover .LoYJxb {
+.PL5Wwe:focus:not(.dQ2Tsf),
+.PL5Wwe:hover:not(.dQ2Tsf),
+.tuKyod .LoYJxb {
    background-color: #3e313c;
 }
-
 
 /* Sidebar elements text color for chans with unread messages */
 .PL5Wwe.H7du2 .t5F5nf {
@@ -87,9 +86,9 @@
 }
 
 /* Search menu text color */
-/*.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
-   color: #fff;
-}*/
+.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
+   color: #000;
+}
 
 .ndJi5d {
    rgba(0,0,0,0.38);
@@ -101,14 +100,15 @@
    font-size: 16px;
 }
 
-/* Search menu people list mail color */
-.Kfe2Ub:hover {
-   color: #fff;
+/* Search menu elements colors when hovering */
+.dQ2Tsf[aria-selected="true"], .PL5Wwe:hover > .dQ2Tsf {
+    background-color: #eee;
+    color: #fff
 }
 
-/* Quick search first element bg color */
-.dQ2Tsf[aria-selected="true"] {
-   background: transparent;
+/* Search menu people list mail color */
+.dQ2Tsf[aria-selected="true"] .Kfe2Ub, .PL5Wwe:hover > .dQ2Tsf .Kfe2Ub {
+   color: #000;
 }
 
 /* Top left corner section (with title) background color */
