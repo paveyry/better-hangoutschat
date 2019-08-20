@@ -1,3 +1,8 @@
+/* Specify size for thread links */
+.threadlink {
+   font-size: 8px;
+}
+
 /* Reduce left and right margins in the chat area */
 .BEjUKc .cFc9ae {
    margin-left: 10px;

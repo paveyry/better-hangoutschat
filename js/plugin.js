@@ -8,7 +8,7 @@ var linkFunction = function(elt) {
       var tmpdiv = document.createElement("div");
       var link = "https://"+match[1]+"/"+elt.getAttribute("data-topic-id");
       link = link.replace("search/", "");
-      tmpdiv.innerHTML = '<p style="font-size:8px;"><a href="'+link+'">Link:</a> '+link+'</p>';
+      tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link:</a> '+link+'</p>';
       elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
    }
 };
