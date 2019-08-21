@@ -31,8 +31,8 @@ https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases
 - For the browser, just paste the `gmonkeyscript.js` script in your greasemonkey or tampermonkey
 extension
 
-Generating Greasemonkey/Tampermonkey script
---------------------------------------------
+Building Greasemonkey/Tampermonkey script from source
+------------------------------------------------------
 
 Just run this command:
 
@@ -41,15 +41,15 @@ Just run this command:
 The script will appear in out/slacktheme. You can now copy it in your greasemonkey or tampermonkey
 extension
 
-Generating Electron client patch
----------------------------------
+Building Electron Client patch from source
+-------------------------------------------
 
 To generate the electron.asar to use with native clients:
 
 - Install `asar` using `npm` and put it in your `$PATH`
 - Install the GHC client
 - Run it at least once (this is important)
-- Get the path of the electron.asar in the installation directory on Windows, or in the App
+- Locate `electron.asar` in the installation directory on Windows, or in the App
  package on Mac (`/Applications/Chat.app/Contents/Resources/electron.asar`) and run this command:
 
         ./generate_patch.sh <path/to/electron.asar>
