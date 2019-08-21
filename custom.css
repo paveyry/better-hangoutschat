@@ -137,6 +137,11 @@
    padding-top: 4px;
 }
 
+/* Margins around Unread label */
+.YQsadf {
+   min-height: 20px;
+}
+
 /* Sidebar "recent" or "starred" section title padding height */
 .wJNchb, .nFzS9e {
    margin-top: 10px;
