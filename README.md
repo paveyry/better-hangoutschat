@@ -3,10 +3,8 @@
 Better Hangouts Chat
 ====================================
 
-This applies Slack's look and feel to your Google Hangouts Chat.
-To install, put `electron.asar` in `Chat.App/Contents/Resources` to use it
-in the Electron client, or use the generated gmonkey scripts with greasemonkey
-or tampermonkey if you use Google Chat in your browser.
+This patch extends Google Hangouts Chat to make it nicer and simpler to use.
+Works with both the official Electron clients and the web version.
 
 Features
 ---------
@@ -27,10 +25,11 @@ Installing from official release files
 - Download the latest release from the 'releases' section:
 https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases
 - For the electron client: open the client at least once, then replace the official
-`electron.asar` with the patched one:
-`C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources` on Windows,
-`/Applications/Chat.app/Contents/Resources` on macOS
-- For the browser script, just paste the script in your greasemonkey or tampermonkey extension
+`electron.asar` with the patched one at this path:
+    - For Windows: `C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources`
+    - For macOS: `/Applications/Chat.app/Contents/Resources`
+- For the browser, just paste the `gmonkeyscript.js` script in your greasemonkey or tampermonkey
+extension
 
 Generating Greasemonkey/Tampermonkey script
 --------------------------------------------
