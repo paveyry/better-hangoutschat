@@ -1,113 +1,113 @@
 /* Specify size for thread links */
 .threadlink {
-   font-size: 8px;
+    font-size: 8px;
 }
 
 /* Reduce left and right margins in the chat area */
 .BEjUKc .cFc9ae {
-   margin-left: 10px;
-   margin-right: 10px;
-   width: auto;
-   max-width:none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    max-width:none;
 }
 .Bl2pUd {
-   padding-left: 0px;
-   padding-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Reduce height of header bar */
 .DWzK6d, .gb_Uf > .gb_g, .gb_Uf, .Jrbdv {
-   height: 45px;
+    height: 45px;
 }
 
 /* Reduce whitespace around New conversation button */
 .RnpT2b {
-   margin: 4px 0 4px 0;
-   min-height: 0px;
+    margin: 4px 0 4px 0;
+    min-height: 0px;
 }
 .IEIJqd {
-   padding-top: 0;
+    padding-top: 0;
 }
 
 /* Allow messages to display full-width */
 .bzJiD .jGyvbd .QIJiHb, .bzJiD .jGyvbd .zX644e {
-   max-width: none;
+    max-width: none;
 }
 
 /* Reduce top and bottom padding around date */
 .mCOR5e {
-   padding: 10px 0 0px 0;
+    padding: 10px 0 0px 0;
 }
 
 /* Reduce right margin in sidebar */
 .n5yyEc {
-   margin-right: 4px;
+    margin-right: 4px;
 }
 
 /* Sidebar color */
 .X9KLPc {
-   background-color: #4d394b;
+    background-color: #4d394b;
 }
 
 /* Sidebar elemtents bg color when hovering */
 .PL5Wwe:focus:not(.dQ2Tsf),
 .PL5Wwe:hover:not(.dQ2Tsf),
 .tuKyod .LoYJxb {
-   background-color: #3e313c;
+    background-color: #3e313c;
 }
 
 /* Sidebar elements text color for chans with unread messages */
 .PL5Wwe.H7du2 .t5F5nf {
-   color: #fff;
+    color: #fff;
 }
 
 /* Channel name color in sidebar */
 .t5F5nf {
-   color: rgb(202, 196, 201);
+    color: rgb(202, 196, 201);
 }
 
 /* Sidebar "recent" or "starred" section names text size and color */
 .aOHsTc {
-   color: rgb(202, 196, 201);
-   font-size: 16px;
-   margin-left: 16px;
+    color: rgb(202, 196, 201);
+    font-size: 16px;
+    margin-left: 16px;
 }
 
 /* Sidebar Search section text color */
 .HLTcjb {
-   color: rgb(202, 196, 201);
+    color: rgb(202, 196, 201);
 }
 .D3DXDc {
-   fill: rgb(202, 196, 201) !important;
+    fill: rgb(202, 196, 201) !important;
 }
 
 /* Sidebar search button hovering bg color */
 .GbZFNe:focus, .GbZFNe:hover {
-   background-color: #3e313c;
+    background-color: #3e313c;
 }
 
 /* Search Menu bg color, shape and dimensions */
 .yoV6yd {
-   background-color: #4d394b;
-   margin-top: -4px;
-   width: 100%;
-   border-radius: 0px;
-   -moz-border-radius: 0px
+    background-color: #4d394b;
+    margin-top: -4px;
+    width: 100%;
+    border-radius: 0px;
+    -moz-border-radius: 0px
 }
 
 /* Search menu text color */
 .Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
-   color: #000;
+    color: #000;
 }
 
 .ndJi5d {
-   rgba(0,0,0,0.38);
+    rgba(0,0,0,0.38);
 }
 
 
 /* Search Menu "frequent" section text color and size */
 .wAR34c {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 /* Search menu elements colors when hovering */
@@ -118,134 +118,134 @@
 
 /* Search menu people list mail color */
 .dQ2Tsf[aria-selected="true"] .Kfe2Ub, .PL5Wwe:hover > .dQ2Tsf .Kfe2Ub {
-   color: #000;
+    color: #000;
 }
 
 /* Top left corner section (with title) background color */
 .Riuhhf {
-   background-color: #4d394b;
+    background-color: #4d394b;
 }
 
 /* Chat top left logo text color */
 #XMLID_8_-Clipped{
-   opacity: 0.8 !important;
-   fill: #fff !important;
+    opacity: 0.8 !important;
+    fill: #fff !important;
 }
 
 /* Padding height between messages in a thread */
 .nF6pT {
-   padding-top: 4px;
+    padding-top: 4px;
 }
 
 /* Margins around Unread label */
 .YQsadf {
-   min-height: 20px;
+    min-height: 20px;
 }
 
 /* Sidebar "recent" or "starred" section title padding height */
 .wJNchb, .nFzS9e {
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 /* Draw white line between the sidebar sections and reduce padding */
 .PL5Wwe + .wJNchb, .teTAFe:not(.fXx9Lc) + .vHL80e .aOHsTc {
-   border-top: solid 1px #e0e0e0;
-   padding-top: 6px;
+    border-top: solid 1px #e0e0e0;
+    padding-top: 6px;
 }
 
 /* Sidebar channels elements height */
 .LoYJxb {
-   height: 26px;
+    height: 26px;
 }
 
 
 /* Vertically align triple dots buttons on
 channels in sidebar with the new height */
 .MhXXcc {
-   line-height: 26px;
+    line-height: 26px;
 }
 .gsrV1e {
-   height: 22px;
-   width: 22px;
+    height: 22px;
+    width: 22px;
 }
 .QeRfYe .Lw7GHd {
-   margin: 2px 6px 0 6px;
+    margin: 2px 6px 0 6px;
 }
 
 
 /* Time and menu buttons and clock for channels inactive and active colors */
 .sFuxxd {
-   color: rgb(202, 196, 201);
+    color: rgb(202, 196, 201);
 }
 .PL5Wwe.H7du2 .sFuxxd {
-   color: #fff;
+    color: #fff;
 }
 .DQy0Rb {
-   fill: rgb(202, 196, 201) !important;
+    fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.H7du2 .DQy0Rb {
-   fill: #fff !important;
+    fill: #fff !important;
 }
 .QeRfYe {
-   fill: rgb(202, 196, 201) !important;
+    fill: rgb(202, 196, 201) !important;
 }
 .PL5Wwe.H7du2 .QeRfYe {
-   fill: #fff !important;
+    fill: #fff !important;
 }
 
 /* Big emojis size */
 .Zc1Emd.NM3Nfc {
-   font-size: 24px;
+    font-size: 24px;
 }
 
 /* Inline emojis size */
 img {
-   border: none;
-   font-size: 1.3em !important;
+    border: none;
+    font-size: 1.3em !important;
 }
 
 /* Reduce top margin in thread block */
 .dsoUjb {
-   padding: 8px 0;
+    padding: 8px 0;
 }
 
 /* Reduce size of reply button */
 .dCMjy {
-   width: 20px;
-   min-width: 20px;
-   height: 20px;
-   min-height: 20px;
-   margin-right: 36px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    margin-right: 36px;
 }
 
 /* Reduce space around blue NEW alert */
 .k1lILc {
-   padding: 5px 0 0;
+    padding: 5px 0 0;
 }
 .k1lILc + .ajCeRb {
-   padding-top: 5px;
+    padding-top: 5px;
 }
 
 /* Reduce space between thread blocks */
 .cZICLc {
-   margin-top: 6px;
+    margin-top: 6px;
 }
 
 /* Increase boldness of usenames in conversations */
 .Z4BnXb {
-   font-weight: 900;
+    font-weight: 900;
 }
 /* Make code snippets look like slack's */
 .FMTudf {
-   font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
-   font-size: .75rem;
-   border: 1px solid #e0e0e0;
-   margin: 1px 0;
-   padding: 3px 10px;
-   background: #f9f9f9;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-   border-radius: 4px;
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
+    font-size: .75rem;
+    border: 1px solid #e0e0e0;
+    margin: 1px 0;
+    padding: 3px 10px;
+    background: #f9f9f9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 /* Reduce the height of collapsed message row */
 .zh742e {
@@ -286,39 +286,39 @@ img {
 
 /* Make inline pre look like slack's */
 .U8d2H {
-   font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
-   background-color: #f7f7f9;
-   margin: 0px;
-   padding: 1px 3px;
-   color: #d72b3f;
-   -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-   border-radius: 3px;
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
+    background-color: #f7f7f9;
+    margin: 0px;
+    padding: 1px 3px;
+    color: #d72b3f;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 /* Reduce sidebar width */
 .X9KLPc, .Riuhhf {
-   width: 280px
+    width: 280px
 }
 
 /* Reduce margin above "Starred" label */
 .aOHsTc {
-   margin-top: 5px;
+    margin-top: 5px;
 }
 
 /* Fix emojis dimensions */
 .iiJ4W {
-   height: auto;
-   width: auto;
-   max-height: 1.2em;
-   max-width: 1.2em;
-   min-width: auto;
+    height: auto;
+    width: auto;
+    max-height: 1.2em;
+    max-width: 1.2em;
+    min-width: auto;
 }
 
 /* Reduce size of New conv button */
 .SfqTBc {
-   padding: 4px 18px 4px 12px;
-   min-height: 30px;
+    padding: 4px 18px 4px 12px;
+    min-height: 30px;
 }
 
 /* Reduce height of link and file previews */
