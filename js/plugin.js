@@ -25,36 +25,39 @@ for (i = 0; i < topics.length; i++) {
 }
 insertionQ('.cZICLc').every(linkFunction);
 
-
 // Then get its webviews
 let webviews = document.querySelectorAll("webview");
 
-// Fetch our CSS in parallel ahead of time
-const cssPath = 'CSSURL';
-let cssPromise = fetch(cssPath).then(response => response.text());
+function loadCSS(cssPath) {
+    // Fetch our CSS in parallel ahead of time
+    let cssPromise = fetch(cssPath).then(response => response.text());
 
-// Insert a style tag into the wrapper view
-cssPromise.then(css => {
-   let s = document.createElement('style');
-   s.type = 'text/css';
-   s.innerHTML = css;
-   document.head.appendChild(s);
-});
+    // Insert a style tag into the wrapper view
+    cssPromise.then(css => {
+       let s = document.createElement('style');
+       s.type = 'text/css';
+       s.innerHTML = css;
+       document.head.appendChild(s);
+    });
 
-// Wait for each webview to load
-webviews.forEach(webview => {
-   webview.addEventListener('ipc-message', message => {
-      if (message.channel == 'didFinishLoading')
-         // Finally add the CSS into the webview
-         cssPromise.then(css => {
-            let script = `
-            let s = document.createElement('style');
-            s.type = 'text/css';
-            s.id = 'slack-custom-css';
-            s.innerHTML = \`${css}\`;
-            document.head.appendChild(s);
-            `
-            webview.executeJavaScript(script);
-         })
-   });
-});
+    // Wait for each webview to load
+    webviews.forEach(webview => {
+       webview.addEventListener('ipc-message', message => {
+          if (message.channel == 'didFinishLoading')
+             // Finally add the CSS into the webview
+             cssPromise.then(css => {
+                let script = `
+                let s = document.createElement('style');
+                s.type = 'text/css';
+                s.id = 'slack-custom-css';
+                s.innerHTML = \`${css}\`;
+                document.head.appendChild(s);
+                `
+                webview.executeJavaScript(script);
+             })
+       });
+    });
+}
+
+loadCSS('CSSSHAPEURL');
+loadCSS('CSSCOLORURL');

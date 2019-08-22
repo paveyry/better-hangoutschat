@@ -18,17 +18,18 @@ mkdir -p out/slacktheme
 
 generateFiles() {
    cat js/plugin.js \
-      | sed "s/CSSURL/$1/g" \
+      | sed "s/CSSSHAPEURL/$1/g" \
+      | sed "s/CSSCOLORURL/$2/g" \
       > "$PLUGINGEN"
    echo "document.addEventListener(\"DOMContentLoaded\", function() {" > "$PLUGINGEN2"
    cat "$PLUGINGEN" >> "$PLUGINGEN2"
    echo "});" >> "$PLUGINGEN2"
    [ -z "$ASARFILE" ] || sed -e "10r $PLUGINGEN2" $DEFAULTINIT > "$DIR/renderer/init.js"
-   cat js/gmonkeyscript_template.js "$PLUGINGEN" > "$2/gmonkeyscript.js"
+   cat js/gmonkeyscript_template.js "$PLUGINGEN" > "$3/gmonkeyscript.js"
    [ -z "$ASARFILE" ] || asar pack "$DIR" electron.asar
-   [ -z "$ASARFILE" ] || mv electron.asar "$2/electron.asar"
+   [ -z "$ASARFILE" ] || mv electron.asar "$3/electron.asar"
 }
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/custom.css" "out/slacktheme"
+generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/css\/color_slack.css" "out/slacktheme"
 
 rm -rf "$DIR" "$DEFAULTINIT" "$PLUGINGEN" "$PLUGINGEN2"
