@@ -11,9 +11,11 @@ Features
 
 Current features: 
 
-- Slack colors and fonts
 - Smaller margins and buttons for better readability and screen space optimization
 - Thread-link buttons at the top of each thread for easier referencing
+- Several different color schemes:
+    - GHC standard colors
+    - Slack colors
 
 Former features:
 
@@ -38,7 +40,7 @@ Just run this command:
 
     ./generate_patch.sh
 
-The script will appear in out/slacktheme. You can now copy it in your greasemonkey or tampermonkey
+The script will appear in `out`. You can now copy it in your greasemonkey or tampermonkey
 extension
 
 Building Electron Client patch from source
@@ -54,10 +56,10 @@ To generate the electron.asar to use with native clients:
 
         ./generate_patch.sh <path/to/electron.asar>
 
-- The patched electron file will appear in out/slacktheme. Simply replace the initial one with 
+- The patched electron file will appear in `out`. Simply replace the initial one with 
 the patched one:
 
-        cp out/slacktheme/electron.asar /Applicaions/Chat.app/Contents/Resources/
+        cp out/<theme>/electron.asar /Applications/Chat.app/Contents/Resources/
 
 - Refresh or Restart GHC.
 
