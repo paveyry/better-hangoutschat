@@ -1,0 +1,108 @@
+/* Sidebar color */
+.X9KLPc {
+    background-color: #4d394b;
+}
+
+/* Sidebar elemtents bg color when hovering */
+.PL5Wwe:focus:not(.dQ2Tsf),
+.PL5Wwe:hover:not(.dQ2Tsf),
+.tuKyod .LoYJxb {
+    background-color: #3e313c;
+}
+
+/* Sidebar elements text color for chans with unread messages */
+.PL5Wwe.H7du2 .t5F5nf {
+    color: #fff;
+}
+
+/* Channel name color in sidebar */
+.t5F5nf {
+    color: rgb(202, 196, 201);
+}
+
+
+/* Sidebar "recent" or "starred" section names color */
+.aOHsTc {
+    color: rgb(202, 196, 201);
+}
+
+/* Sidebar Search section text color */
+.HLTcjb {
+    color: rgb(202, 196, 201);
+}
+.D3DXDc {
+    fill: rgb(202, 196, 201) !important;
+}
+
+/* Sidebar search button hovering bg color */
+.GbZFNe:focus, .GbZFNe:hover {
+    background-color: #3e313c;
+}
+
+/* Search Menu bg color */
+.yoV6yd {
+    background-color: #4d394b;
+}
+
+/* Search menu text color */
+.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
+    color: #000;
+}
+
+.ndJi5d {
+    rgba(0,0,0,0.38);
+}
+
+/* Search menu elements colors when hovering */
+.dQ2Tsf[aria-selected="true"], .PL5Wwe:hover > .dQ2Tsf {
+    background-color: #eee;
+    color: #fff
+}
+
+/* Search menu people list mail color */
+.dQ2Tsf[aria-selected="true"] .Kfe2Ub, .PL5Wwe:hover > .dQ2Tsf .Kfe2Ub {
+    color: #000;
+}
+
+/* Top left corner section (with title) background color */
+.Riuhhf {
+    background-color: #4d394b;
+}
+
+/* Chat top left logo text color */
+#XMLID_8_-Clipped{
+    opacity: 0.8 !important;
+    fill: #fff !important;
+}
+
+/* Time and menu buttons and clock for channels inactive and active colors */
+.sFuxxd {
+    color: rgb(202, 196, 201);
+}
+.PL5Wwe.H7du2 .sFuxxd {
+    color: #fff;
+}
+.DQy0Rb {
+    fill: rgb(202, 196, 201) !important;
+}
+.PL5Wwe.H7du2 .DQy0Rb {
+    fill: #fff !important;
+}
+.QeRfYe {
+    fill: rgb(202, 196, 201) !important;
+}
+.PL5Wwe.H7du2 .QeRfYe {
+    fill: #fff !important;
+}
+
+/* Make code snippets have slack colors */
+.FMTudf {
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+}
+
+/* Make inline pre have slack colors */
+.U8d2H {
+    background-color: #f7f7f9;
+    color: #d72b3f;
+}
