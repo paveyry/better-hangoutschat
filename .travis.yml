@@ -20,12 +20,20 @@ before_script:
 script:
     - ./generate_patch.sh t/Chat.app/Contents/Resources/electron.asar
 
+after_script:
+    - 7z a -tzip out/electron-slack.zip out/slacktheme/electron.asar
+    - 7z a -tzip out/electron-ghc.zip out/ghctheme/electron.asar
+    - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
+    - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
+
 deploy:
     provider: releases
     api_key: $TOKEN
     file:
-        - "out/slacktheme/electron.asar"
-        - "out/slacktheme/gmonkeyscript.js"
+        - "out/electron-ghc.zip"
+        - "out/electron-slack.zip"
+        - "out/gmonkeyscript-ghc.js"
+        - "out/gmonkeyscript-slack.js"
     skip-cleanup: true
     on:
         tags: true

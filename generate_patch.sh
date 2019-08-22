@@ -12,11 +12,10 @@ ASARFILE="$1"
 
 [ -z "$ASARFILE" ] || asar e "$ASARFILE" "$DIR"
 
-mkdir -p out/slacktheme
-
 [ -z "$ASARFILE" ] || cp "$DIR/renderer/init.js" $DEFAULTINIT
 
 generateFiles() {
+   mkdir -p "$3"
    cat js/plugin.js \
       | sed "s/CSSSHAPEURL/$1/g" \
       | sed "s/CSSCOLORURL/$2/g" \
@@ -31,5 +30,8 @@ generateFiles() {
 }
 
 generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/color_slack.css" "out/slacktheme"
+
+generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "" "out/ghctheme"
+
 
 rm -rf "$DIR" "$DEFAULTINIT" "$PLUGINGEN" "$PLUGINGEN2"

@@ -29,6 +29,9 @@ insertionQ('.cZICLc').every(linkFunction);
 let webviews = document.querySelectorAll("webview");
 
 function loadCSS(cssPath) {
+    if (cssPath == '') {
+        return;
+    }
     // Fetch our CSS in parallel ahead of time
     let cssPromise = fetch(cssPath).then(response => response.text());
 
