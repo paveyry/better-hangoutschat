@@ -30,6 +30,8 @@ https://github.com/paveyry/better-hangoutschat/releases
 `electron.asar` with the patched one at this path:
     - For Windows: `C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources`
     - For macOS: `/Applications/Chat.app/Contents/Resources`
+    - For GNU/Linux: Google have not released their electron client for GNU/Linux, but you can use
+    the browser script with the web version.
 - For the browser, just paste the `gmonkeyscript.js` script in your greasemonkey or tampermonkey
 extension
 
