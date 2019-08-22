@@ -19,8 +19,8 @@ before_script:
 
 script:
     - ./generate_patch.sh t/Chat.app/Contents/Resources/electron.asar
-    - 7z a -tzip out/electron-slack.zip out/slacktheme/electron.asar
-    - 7z a -tzip out/electron-ghc.zip out/ghctheme/electron.asar
+    - cd out/slacktheme && 7z a -tzip ../electron-slack.zip electron.asar && cd ../..
+    - cd out/ghctheme && 7z a -tzip ..//electron-ghc.zip electron.asar && cd ../..
     - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
     - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
 
