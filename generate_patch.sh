@@ -30,6 +30,6 @@ generateFiles() {
    [ -z "$ASARFILE" ] || mv electron.asar "$3/electron.asar"
 }
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/Slack-Theme-for-Hangouts-Chat\/master\/css\/color_slack.css" "out/slacktheme"
+generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/color_slack.css" "out/slacktheme"
 
 rm -rf "$DIR" "$DEFAULTINIT" "$PLUGINGEN" "$PLUGINGEN2"

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/paveyry/Slack-Theme-for-Hangouts-Chat.svg?branch=master)](https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases/latest)
+[![Build Status](https://travis-ci.org/paveyry/better-hangoutschat.svg?branch=master)](https://github.com/paveyry/better-hangoutschat/releases/latest)
 
 Better Hangouts Chat
 ====================================
@@ -23,7 +23,7 @@ Installing from official release files
 ---------------------------------------
 
 - Download the latest release from the 'releases' section:
-https://github.com/paveyry/Slack-Theme-for-Hangouts-Chat/releases
+https://github.com/paveyry/better-hangoutschat/releases
 - For the electron client: open the client at least once, then replace the official
 `electron.asar` with the patched one at this path:
     - For Windows: `C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources`
