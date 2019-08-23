@@ -272,6 +272,11 @@
     fill: #fff !important;
 }
 
+/* Chat top left logo */
+#_x3C_Path_x3E_ {
+    fill: #cc7832;
+}
+
 /* Top left corner Status button when active */
 .RASpke:hover, .RASpke:focus, .RASpke:hover:focus, .RASpke:active, .RASpke.iWO5td.iWO5td {
     background-color: #cc7832;
