@@ -16,6 +16,7 @@ Current features:
 - Several different color schemes:
     - GHC standard colors
     - Slack colors
+    - Dark theme (for lower eye strain)
 
 Former features:
 
