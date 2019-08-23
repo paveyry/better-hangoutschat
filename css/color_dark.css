@@ -6,6 +6,11 @@
 .Bl2pUd {
     background-color: #212121;
 }
+/* Global background color in private messages */
+.WQKmIb .Bl2pUd, .WQKmIb .byY7Yb {
+    background-color: #2d2d2d;
+}
+
 /* Topbar background color */
 .QTQg5e {
     background: #212121;
@@ -163,7 +168,7 @@
 
 /* Text between threads color */
 .A2BXPe {
-   color: #fff; 
+    color: #fff; 
 }
 
 /* Sidebar color and border */
