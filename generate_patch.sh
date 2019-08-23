@@ -33,5 +33,6 @@ generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat
 
 generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "" "out/ghctheme"
 
+generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/color_dark.css" "out/darktheme"
 
 rm -rf "$DIR" "$DEFAULTINIT" "$PLUGINGEN" "$PLUGINGEN2"
