@@ -10,6 +10,10 @@
 .WQKmIb .Bl2pUd, .WQKmIb .byY7Yb {
     background-color: #2d2d2d;
 }
+/* Global background color in room preview */
+.x7DKme {
+    background-color: #212121;
+}
 
 /* Title in private messages */
 .CmMf8e {
@@ -54,6 +58,10 @@
     background-color: #cc7832;
 }
 
+/* Topbar in room preview */
+.oPqlY {
+    background-color: #2d2d2d;
+}
 
 /* Edit/react/delete buttons on message */
 .f8lxbf {
@@ -173,6 +181,14 @@
 }
 .zFe2Ef:not(.RDPZE) .v6TC2e { /* send button when active */
     fill: #cc7832;
+}
+
+/* Join room box in room preview */
+.BhQsO {
+    color: #fff;
+}
+.CjSwue {
+    background-color: #2d2d2d;
 }
 
 /* Text between threads color */
@@ -368,3 +384,11 @@
 div .mUbCce:hover, div .mUbCce:focus, div .mUbCce:active, div .mUbCce.qs41qe, div .mUbCce.u3bW4e, .JRtysb:hover .snByac, .JRtysb:focus .snByac, .JRtysb:active .snByac, .JRtysb.qs41qe .snByac, .JRtysb.u3bW4e .snByac {
     fill: #cc7832;
 }
+
+/* browse room exit button */
+.xTcvqe .fKz7Od {
+    color: #000;
+    fill: #000;
+}
+
+
