@@ -12,11 +12,11 @@
 }
 /* Global background color in room preview */
 .x7DKme {
-    background-color: #212121;
+    background-color: #212121 !important;
 }
 /* Global background color in search results */
 .pWhTUc {
-    background-color: #212121;
+    background-color: #212121 !important;
 }
 
 /* Title in private messages */
@@ -59,11 +59,11 @@
 
 /* Thread boxes in search results */
 .d4FIEb .ajCeRb .QIJiHb {
-    color: #fff;
+    color: #fff !important;
 }
 /* Room title between threads in search results */
 .aVIRye {
-    color: #cc7832;
+    color: #cc7832 !important;
 }
 
 /* Topbar members button */
@@ -73,7 +73,7 @@
 
 /* Topbar in room preview */
 .oPqlY {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d !important;
 }
 
 /* Edit/react/delete buttons on message */
@@ -198,10 +198,10 @@
 
 /* Join room box in room preview */
 .BhQsO {
-    color: #fff;
+    color: #fff !important;
 }
 .CjSwue {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d !important;
 }
 
 /* Text between threads color */
@@ -400,8 +400,8 @@ div .mUbCce:hover, div .mUbCce:focus, div .mUbCce:active, div .mUbCce.qs41qe, di
 
 /* browse room and search exit button */
 .xTcvqe .fKz7Od, .wbJc4 .fKz7Od {
-    color: #000;
-    fill: #000;
+    color: #000 !important;
+    fill: #000 !important;
 }
 
 
