@@ -70,4 +70,5 @@ Preview
 --------
 
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63685721-01f28a80-c7f8-11e9-8522-75446596d574.png)
-![Screenshot](https://user-images.githubusercontent.com/3884900/61730969-c2f59300-ad7a-11e9-9cf3-65b0f5363693.png)
+![Screenshot](https://user-images.githubusercontent.com/3884900/63689984-6c5cf800-c803-11e9-864e-ec578353b946.png)
+![Screenshot](https://user-images.githubusercontent.com/3884900/63689983-6c5cf800-c803-11e9-8857-53326ec1d22b.png)
