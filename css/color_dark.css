@@ -14,6 +14,10 @@
 .x7DKme {
     background-color: #212121;
 }
+/* Global background color in search results */
+.pWhTUc {
+    background-color: #212121;
+}
 
 /* Title in private messages */
 .CmMf8e {
@@ -51,6 +55,15 @@
 }
 .XbbXmb.zzVqCe .nF6pT, .jGyvbd .jO0Dzb {
     background-color: #2d2d2d;
+}
+
+/* Thread boxes in search results */
+.d4FIEb .ajCeRb .QIJiHb {
+    color: #fff;
+}
+/* Room title between threads in search results */
+.aVIRye {
+    color: #cc7832;
 }
 
 /* Topbar members button */
@@ -385,8 +398,8 @@ div .mUbCce:hover, div .mUbCce:focus, div .mUbCce:active, div .mUbCce.qs41qe, di
     fill: #cc7832;
 }
 
-/* browse room exit button */
-.xTcvqe .fKz7Od {
+/* browse room and search exit button */
+.xTcvqe .fKz7Od, .wbJc4 .fKz7Od {
     color: #000;
     fill: #000;
 }
