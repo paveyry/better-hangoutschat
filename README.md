@@ -8,13 +8,25 @@ contain an `electron.asar` file and I have been unable to find another way to in
 far. The Greasemonkey/Tampermonkey script still works fine.
 
 If you care about having a minimal GUI for the chat separate from your main browser window, 
-you can run use the Chrome flag `--app=https://chat.google.com`:
+you can run use the Custom Mac Launcher as described below or simply use the Chrome flag `--app=https://chat.google.com`:
 
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://chat.google.com # on Mac OS
 
     google-chrome --app=https://chat.google.com # on GNU/Linux
 
 You can follow the evolution of this issue and suggest solutions here: https://github.com/paveyry/better-hangoutschat/issues/10
+
+### Custom Mac Launcher
+
+You can clone this repository and run the `make install_mac_app` rule to install a `BetterChat`
+launcher that runs an entirely separate instance of Google Chrome, with a separate user data directory
+(in `$HOME/.betterchat`).
+
+This means that the tampermonkey extension will *only* be installed for Hangouts Chat but not for
+your main Chrome instance.
+
+Just run the `make install_mac_app` rule and follow the instructions. You will only have to configure
+it once.
 
 Better Hangouts Chat
 ====================================
