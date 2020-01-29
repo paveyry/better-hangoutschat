@@ -1,5 +1,21 @@
 [![Build Status](https://travis-ci.org/paveyry/better-hangoutschat.svg?branch=master)](https://github.com/paveyry/better-hangoutschat/releases/latest)
 
+Update January 29th 2020
+------------------------
+
+Google recently released version 20 of the Google Hangouts Chat client. This new build does not
+contain an `electron.asar` file and I have been unable to find another way to inject the code so
+far. The Greasemonkey/Tampermonkey script still works fine.
+
+If you care about having a minimal GUI for the chat separate from your main browser window, 
+you can run use the Chrome flag `--app=https://chat.google.com`:
+
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://chat.google.com # on Mac OS
+
+    google-chrome --app=https://chat.google.com # on GNU/Linux
+
+You can follow the evolution of this issue and suggest solutions here: https://github.com/paveyry/better-hangoutschat/issues/10
+
 Better Hangouts Chat
 ====================================
 
