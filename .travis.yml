@@ -1,7 +1,5 @@
 sudo: required
-language: node_js
-node_js:
-    - "10"
+language: bash
 dist: trusty
 
 before_install:
@@ -9,7 +7,6 @@ before_install:
 
 install:
     - sudo apt-get install p7zip-full
-    - npm install -g asar
 
 before_script:
     - wget https://dl.google.com/chat/latest/InstallHangoutsChat.dmg
@@ -18,10 +15,10 @@ before_script:
     - sudo mount -oloop *.hfs t
 
 script:
-    - ./generate_patch.sh t/Chat.app/Contents/Resources/electron.asar
-    - cd out/slacktheme && 7z a -tzip ../electron-slack.zip electron.asar && cd ../..
-    - cd out/darktheme && 7z a -tzip ../electron-dark.zip electron.asar && cd ../..
-    - cd out/ghctheme && 7z a -tzip ..//electron-ghc.zip electron.asar && cd ../..
+    - ./generate_patch.sh t/Chat.app/Contents/Resources/app/main.js
+    - cd out/slacktheme && 7z a -tzip ../electron-slack.zip main.js && cd ../..
+    - cd out/darktheme && 7z a -tzip ../electron-dark.zip main.js && cd ../..
+    - cd out/ghctheme && 7z a -tzip ..//electron-ghc.zip main.js && cd ../..
     - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
     - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
     - cp out/darktheme/gmonkeyscript.js out/gmonkeyscript-dark.js

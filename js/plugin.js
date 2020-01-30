@@ -49,13 +49,11 @@ function loadCSS(cssPath) {
           if (message.channel == 'didFinishLoading')
              // Finally add the CSS into the webview
              cssPromise.then(css => {
-                let script = `
-                let s = document.createElement('style');
-                s.type = 'text/css';
-                s.id = 'slack-custom-css';
-                s.innerHTML = \`${css}\`;
-                document.head.appendChild(s);
-                `
+                let script = "let s = document.createElement('style');"+
+                "s.type = 'text/css';"+
+                "s.id = 'slack-custom-css';"+
+                "s.innerHTML = '"+css+"';"+
+                "document.head.appendChild(s);";
                 webview.executeJavaScript(script);
              })
        });
