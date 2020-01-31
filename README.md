@@ -44,7 +44,7 @@ Easy installation on macOS
 - Clone this repository
 - Run the `make install` rule with the appropriate THEME variable:
 
-    THEME=<slack|ghc|dark> make install
+        THEME=<slack|ghc|dark> make install
 
 - Restart GHC
 
