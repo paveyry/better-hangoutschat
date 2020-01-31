@@ -42,7 +42,10 @@ Easy installation on macOS
 - Install the GHC client
 - Run it at least once
 - Clone this repository
-- Run the command `make install`
+- Run the `make install` rule with the appropriate THEME variable:
+
+    THEME=<slack|ghc|dark> make install
+
 - Restart GHC
 
 Building script from source

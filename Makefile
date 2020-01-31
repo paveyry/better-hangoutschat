@@ -1,13 +1,19 @@
 ELECTRON?=/Applications/Chat.app/Contents/Resources/app/main.js
-MODE?=dark
+THEME?=dark
+OUTELECTRON?=out/$(THEME)theme/main.js
 
-all: electron
+all: build_all
 
-install: electron
-	cp -f out/$(MODE)theme/main.js $(ELECTRON)
+install: $(OUTELECTRON)
+	cp -f $(OUTELECTRON) $(ELECTRON)
+
+$(OUTELECTRON):
+	./generate_patch.sh $(ELECTRON)
 
 gmonkey:
 	./generate_patch.sh
 
-electron:
-	./generate_patch.sh $(ELECTRON)
+build_all: $(OUTELECTRON)
+
+clean:
+	rm -rf out/
