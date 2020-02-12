@@ -22,6 +22,7 @@ script:
     - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
     - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
     - cp out/darktheme/gmonkeyscript.js out/gmonkeyscript-dark.js
+    - export GHCVER=`./ghc_version.sh t/Chat.app/Contents/Info.plist`
 
 deploy:
     provider: releases
@@ -36,4 +37,4 @@ deploy:
     skip-cleanup: true
     on:
         tags: true
-    name: Release $TRAVIS_TAG - $(date +'%Y.%m.%d')
+    name: Release $TRAVIS_TAG - $(date +'%Y.%m.%d') - GHC build v$GHCVER
