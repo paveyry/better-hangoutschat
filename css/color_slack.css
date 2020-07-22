@@ -96,13 +96,13 @@
 }
 
 /* Make code snippets have slack colors */
-.FMTudf {
-    border: 1px solid #e0e0e0;
-    background: #f9f9f9;
+.FMTudf, .Zc1Emd div {
+    border: 1px solid #e0e0e0!important;
+    background: #f9f9f9!important;
 }
 
 /* Make inline pre have slack colors */
-.U8d2H {
-    background-color: #f7f7f9;
-    color: #d72b3f;
+.U8d2H, .Zc1Emd span:not(.NhKrqd):not(.fWwrkf) {
+    background-color: #f7f7f9!important;
+    color: #d72b3f!important;
 }

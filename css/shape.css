@@ -147,7 +147,7 @@ img {
 }
 
 /* Make code snippets look like slack's */
-.FMTudf {
+.FMTudf, .Zc1Emd div {
     font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
     font-size: .75rem;
     margin: 1px 0;
@@ -195,7 +195,7 @@ img {
 }
 
 /* Make inline pre look like slack's */
-.U8d2H {
+.U8d2H, .Zc1Emd span:not(.NhKrqd):not(.fWwrkf) {
     font-family: Monaco,Menlo,Consolas,"Courier New",monospace !important;
     margin: 0px;
     padding: 1px 3px;

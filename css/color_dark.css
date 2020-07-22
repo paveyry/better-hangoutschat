@@ -348,17 +348,17 @@
 }
 
 /* Code snippets colors */
-.FMTudf {
-    border: 1px solid #6a6a6a;
-    background: #3d3d3d;
-    color: #fff;
+.FMTudf, .Zc1Emd div {
+    border: 1px solid #6a6a6a!important;
+    background: #3d3d3d!important;
+    color: #fff!important;
 }
 
 /* Inline pre colors */
-.U8d2H {
-    background-color: #3d3d3d;
-    color: #cc7832;
-    border: 1px solid #6a6a6a;
+.U8d2H, .Zc1Emd span:not(.NhKrqd):not(.fWwrkf) {
+    background-color: #3d3d3d!important;
+    color: #cc7832!important;
+    border: 1px solid #6a6a6a!important;
 }
 
 /* Self Mentions */
