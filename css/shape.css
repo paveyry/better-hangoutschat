@@ -105,12 +105,22 @@
 }
 
 /* Sidebar channel icons size and right padding */
-.OcqlLb {
+.OcqlLb, .yDIlKc .OcqlLb, .W0hon .OcqlLb, .DO97we, .zEysJf {
     height: 25px;
     width: 25px;
 }
-.JwR1Pc, .wR3Nid {
+.JwR1Pc, .wR3Nid, .yDIlKc .JwR1Pc, .yDIlKc .wR3Nid, .W0hon .JwR1Pc, .W0hon .wR3Nid {
     padding-left: 5px;
+}
+
+/* Sidebar conversation name size */
+.t5F5nf, .wR3Nid {
+    line-height: 15px;
+}
+/* Sidebar conversation content preview size */
+.RsRwdf {
+    line-height: 12px;
+    font-size: .67rem;
 }
 
 /* Vertically align triple dots buttons on
