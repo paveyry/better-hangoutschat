@@ -20,6 +20,10 @@
     color: rgb(202, 196, 201);
 }
 
+/* Sidebar channel icons */
+.WmSnJd img, .OcqlLb.vif9vc {
+    background-color: #3e313c;
+}
 
 /* Sidebar "recent" or "starred" section names color */
 .aOHsTc {
@@ -37,6 +41,13 @@
 /* Sidebar search button hovering bg color */
 .GbZFNe:focus, .GbZFNe:hover {
     background-color: #3e313c;
+}
+
+/* Sidebar search button shadow */
+.d6pS5 {
+    box-shadow: 0 5px 5px -2px #3e313c;
+    padding-bottom: 0;
+
 }
 
 /* Search Menu bg color */
@@ -73,6 +84,11 @@
 #XMLID_8_-Clipped{
     opacity: 0.8 !important;
     fill: #fff !important;
+}
+
+/* Notifications active/disabled status button */
+.gWTIDe {
+    color: rgb(202, 196, 201);
 }
 
 /* Time and menu buttons and clock for channels inactive and active colors */

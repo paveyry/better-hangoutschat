@@ -20,6 +20,16 @@
     height: 45px;
 }
 
+.HyiAVd, .i5PBGe .GVSFtd {
+    margin-top: -5px;
+}
+
+/* Chan button in header bar */
+.dKv0S .i5PBGe {
+    min-height: 12px;
+    padding: 4px;
+}
+
 /* Reduce whitespace around New conversation button */
 .RnpT2b {
     margin: 4px 0 4px 0;
@@ -64,8 +74,13 @@
 }
 
 /* Padding height between messages in a thread */
-.nF6pT {
+.nF6pT, .dsoUjb:not(.WQKmIb) .jO0Dzb.nF6pT {
     padding-top: 4px;
+}
+
+/* Padding below people's names */
+.NGoCob {
+    padding-bottom: 0;
 }
 
 /* Margins around Unread label */
@@ -89,6 +104,14 @@
     height: 26px;
 }
 
+/* Sidebar channel icons size and right padding */
+.OcqlLb {
+    height: 25px;
+    width: 25px;
+}
+.JwR1Pc, .wR3Nid {
+    padding-left: 5px;
+}
 
 /* Vertically align triple dots buttons on
 channels in sidebar with the new height */
@@ -160,6 +183,9 @@ img {
 /* Reduce the height of collapsed message row */
 .zh742e {
     padding-top: 0;
+}
+.kZ7cwe {
+    border: none;
 }
 
 /* Reduce margin around reaction emojis */
@@ -258,4 +284,11 @@ img {
 .rNTKFb.Tvakkc, .tHcB6b .wU0G2b, .rNTKFb.Tvakkc + .bBukm /* image (for links) */ {
     height: 100px !important;
     width: auto !important;
+}
+/* answer text box size */
+.igYHTd, .vmpzOc .PhFuQe .I0LFzc, .EFNTcf, .CfUpN {
+    min-height: 38px;
+}
+.XweIZc {
+    padding: 5px 16px;
 }

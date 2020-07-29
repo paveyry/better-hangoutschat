@@ -42,6 +42,10 @@
     color: #fff;
     fill: #fff;
 }
+/* Notifications active/disabled status button */
+.gWTIDe {
+    color: rgb(202, 196, 201);
+}
 /* Thread boxes colors */
 .dsoUjb {
     background-color: #2d2d2d;
@@ -81,6 +85,7 @@
 /* Topbar members button */
 .sNyyib .x1jjEb {
     background-color: #cc7832;
+    padding: 0px 8px;
 }
 
 /* Topbar in room preview */
@@ -160,7 +165,7 @@
 }
 
 /* Answer box background color */
-.vmpzOc {
+.vmpzOc, .PhFuQe.yXgmRe .dJ9vNe, .dJ9vNe {
     background-color: #2d2d2d;
 }
 /* Cursor and text input color */
@@ -238,6 +243,11 @@
     background-color: #3f3f3f;
 }
 
+/* Sidebar channel icons */
+.WmSnJd img, .OcqlLb.vif9vc {
+    background-color: black;
+}
+
 /* Sidebar active channel */
 .FS4hgd.iWO5td .ojqkvd, .FS4hgd.iWO5td, .dHI9xe.qs41qe, .dHI9xe.KKjvXb.KKjvXb, .dHI9xe.qs41qe .ojqkvd.ojqkvd, .dHI9xe.KKjvXb.KKjvXb .ojqkvd {
     color: #fff;
@@ -281,6 +291,12 @@
 /* Sidebar search button hovering bg color */
 .GbZFNe:focus, .GbZFNe:hover {
     background-color: #3f3f3f;
+}
+
+/* Sidebar search button shadow */
+.d6pS5 {
+    box-shadow: 0 5px 5px -2px black;
+    padding-bottom: 0;
 }
 
 /* Search menu text color */
@@ -368,6 +384,12 @@
 /* Others' mentions */
 .fWwrkf {
     color: #cc7832;
+}
+
+/* People's name before message */
+.cmEq8b .Z4BnXb .njhDLd {
+    color: white;
+    font-weight: 1000;
 }
 
 /* Link previews */
