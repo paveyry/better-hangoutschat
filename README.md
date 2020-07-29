@@ -79,6 +79,10 @@ Preview
 --------
 
 ### Thread links
+![Screenshot](https://user-images.githubusercontent.com/3884900/88812353-88091500-d1af-11ea-8d3d-579cab4aa143.png)
+
+Click on the *Show Thread Links* button and thread links will appear before each thread in the current window.
+
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63706271-db981380-c826-11e9-953b-8983738463b7.png)
 
 ### Dark Theme
