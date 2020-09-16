@@ -33,6 +33,8 @@ https://github.com/paveyry/better-hangoutschat/releases
     - For macOS: `/Applications/Chat.app/Contents/Resources/app/main.js`
     - For GNU/Linux: Google have not released their electron client for GNU/Linux, but you can use
     the browser script with the web version.
+If the theme doesn't appear the first time you restart GHC, try to restart it a second time.
+
 - For the browser, just paste the `gmonkeyscript.js` script in your greasemonkey or tampermonkey
 extension
 
@@ -73,7 +75,8 @@ the patched one:
 
         cp out/<theme>/main.js /Applications/Chat.app/Contents/Resources/app/main.js
 
-- Restart GHC.
+- Restart GHC. If the theme doesn't appear the first time you restart GHC, try to restart it
+a second time.
 
 Preview
 --------
