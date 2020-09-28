@@ -12,6 +12,9 @@ function inject(){
             var tmpdiv = document.createElement("div");
             var link = "https://"+match[1]+"/"+elt.getAttribute("data-topic-id");
             link = link.replace("search/", "");
+            // Remove the /u/[0-9] from the link, which is bad when sharing links because it
+            // could try to open the link with their non-default Google account.
+            link = link.replace(/\/u\/\d/, "");
             tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link:</a> '+link+'</p>';
             elt.setAttribute("linked", "");
             elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
