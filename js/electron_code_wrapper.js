@@ -7,10 +7,13 @@ app.on('web-contents-created', (e, webContents) => {
     }()
     )
     `;
-    if (webContents.id > 3) {
+    if (webContents.id > -1) {
         webContents.on('did-finish-load', () => {
-            webContents.executeJavaScript(`(console.log("running better-hangoutschat..."))`);
-            webContents.executeJavaScript(code, true);
+            var millisecondsToWait = 3500;
+            setTimeout(function() {
+                webContents.executeJavaScript(`(console.log("running better-hangoutschat..."))`);
+                webContents.executeJavaScript(code, true);
+            }, millisecondsToWait);
         });
         webContents.on('before-input-event', (event, input) => {
             if (input.key == "F12") {
