@@ -17,6 +17,11 @@ generateFiles() {
       | sed "s/CSSCOLORURL/$2/g" \
       > "$PLUGINGEN"
 
+   if grep -q "paveyry" "$MAINJSFILE"; then
+       echo "The specified main.js file is already patched, please specify a clean main.js file from a fresh release"
+       return 1
+   fi
+
    [ -z "$MAINJSFILE" ] || cat $PLUGINGEN | sed "s/\\\/\\\\\\\\/g" > "$ESCAPEDPLUGIN"
    [ -z "$MAINJSFILE" ] || cat js/electron_code_wrapper.js | sed "/CODEHERE/r $ESCAPEDPLUGIN" > $WRAPPEDPLUGIN
    [ -z "$MAINJSFILE" ] || cat $MAINJSFILE $WRAPPEDPLUGIN > $3/main.js
