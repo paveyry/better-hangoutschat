@@ -82,9 +82,11 @@ function inject(){
 }
 
 if ( window !== undefined ) {
-    let injected = window.injected;
-    if ( injected === undefined ) {
-        inject();
-        window.injected = true;
-    }
+    setTimeout(function(){
+        let injected = window.injected;
+        if ( injected === undefined ) {
+            inject();
+            window.injected = true;
+        }
+    }, 3500);
 }
