@@ -6,6 +6,10 @@ Better Hangouts Chat
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the official Electron clients and the web version.
 
+*Note*: Google is dropping support for the Electron client in favor of using the new Chrome App.
+In order to use this plugin within the Chrome App, follow the instructions for the browser
+version of this plugin, within Chrome.
+
 Features
 ---------
 
@@ -86,7 +90,7 @@ Preview
 
 Click on the *Show Thread Links* button and thread links will appear before each thread in the current window.
 
-![Screenshot](https://user-images.githubusercontent.com/3884900/63706271-db981380-c826-11e9-953b-8983738463b7.png)
+![Screenshot](https://user-images.githubusercontent.com/3884900/112030582-5247e080-8b32-11eb-8280-3fe396da923e.png)
 
 ### Dark Theme
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63685721-01f28a80-c7f8-11e9-8522-75446596d574.png)
