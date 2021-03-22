@@ -3,6 +3,10 @@
     font-size: 8px;
 }
 
+.linkcpy {
+    font-weight: bold;
+}
+
 /* Reduce left and right margins in the chat area */
 .BEjUKc .cFc9ae {
     margin-left: 10px;

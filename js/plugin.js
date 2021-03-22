@@ -15,7 +15,7 @@ function inject(){
             // Remove the /u/[0-9] from the link, which is bad when sharing links because it
             // could try to open the link with their non-default Google account.
             link = link.replace(/\/u\/\d/, "");
-            tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link:</a> '+link+'</p>';
+            tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link:</a> '+link+' (<a class="linkcpy" link="'+link+'">COPY TO CLIPBOARD</a>)</p>';
             elt.setAttribute("linked", "");
             elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
         }
@@ -35,8 +35,30 @@ function inject(){
             for (i = 0; i < topics.length; i++) {
                 linkFunction(topics[i]);
             }
+            var links = document.getElementsByClassName('linkcpy');
+            for (i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", async event => {
+                    if (!navigator.clipboard) {
+                        event.target.innerText = "Clipboard API not available";
+                        event.target.style.color = 'red';
+                        return;
+                    }
+                    var text = event.target.getAttribute("link");
+                    console.log(text);
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        event.target.innerText = 'SUCCESSFULLY COPIED TO CLIPBOARD';
+                        event.target.style.color = 'green';
+                    } catch (err) {
+                        event.target.innerText = 'FAILED TO COPY';
+                        event.target.style.color = 'red';
+                        console.error('Failed to copy!', err);
+                    }
+                });
+            }
         });
     }
+
     
     // insertion-query v1.0.3 (2016-01-20)
     // license:MIT
