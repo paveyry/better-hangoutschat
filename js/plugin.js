@@ -49,6 +49,10 @@ function inject(){
                         await navigator.clipboard.writeText(text);
                         event.target.innerText = 'SUCCESSFULLY COPIED TO CLIPBOARD';
                         event.target.style.color = 'green';
+                        setTimeout(function(){
+                            event.target.innerText = "COPY TO CLIPBOARD";
+                            event.target.style.color = "#1a73e8";
+                        }, 3000);
                     } catch (err) {
                         event.target.innerText = 'FAILED TO COPY';
                         event.target.style.color = 'red';
