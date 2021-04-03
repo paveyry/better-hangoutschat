@@ -1,38 +1,38 @@
 #!/bin/bash
 
-# Usage: ./generate_patch.sh [original_mainjs_file]
+# Usage: ./generate_patch.sh
 
 set -e
 
-PLUGINGEN="$(mktemp)"
-ESCAPEDPLUGIN="$(mktemp)"
-WRAPPEDPLUGIN="$(mktemp)"
-DEFAULTINIT="$(mktemp)"
-MAINJSFILE="$1"
+PLUGIN="$(mktemp)"
+CSSINSERTCODE="$(mktemp)"
+PLUGINWITHCSS="$(mktemp)"
+URL="https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/COLOR"
 
 generateFiles() {
-   mkdir -p "$3"
-   cat js/plugin.js \
-      | sed "s/CSSSHAPEURL/$1/g" \
-      | sed "s/CSSCOLORURL/$2/g" \
-      > "$PLUGINGEN"
+   mkdir -p "$2"
+   COLORURL="$(echo $URL | sed "s/COLOR/$1/g")"
+   [ -z $1 ] && COLORURL=""
+   cat js/insert_css.js | sed "s#CSSCOLORURL#$COLORURL#g" > "$CSSINSERTCODE"
+   cat js/plugin.js | sed "/INSERTCSS/r $CSSINSERTCODE" > "$PLUGINWITHCSS"
+   cat js/plugin.js | sed "s/^.*INSERTCSS$//g" > "$PLUGIN"
 
-   if grep -q "paveyry" "$MAINJSFILE"; then
-       echo "The specified main.js file is already patched, please specify a clean main.js file from a fresh release"
-       return 1
-   fi
+   cat js/gmonkeyscript_template.js "$PLUGINWITHCSS" > "$2/gmonkeyscript.js"
 
-   [ -z "$MAINJSFILE" ] || cat $PLUGINGEN | sed "s/\\\/\\\\\\\\/g" > "$ESCAPEDPLUGIN"
-   [ -z "$MAINJSFILE" ] || cat js/electron_code_wrapper.js | sed "/CODEHERE/r $ESCAPEDPLUGIN" > $WRAPPEDPLUGIN
-   [ -z "$MAINJSFILE" ] || cat $MAINJSFILE $WRAPPEDPLUGIN > $3/main.js
-
-   cat js/gmonkeyscript_template.js "$PLUGINGEN" > "$3/gmonkeyscript.js"
+   VERSION="$(git tag | tail -n 1 | cut -c2-)"
+   mkdir -p "$2/firefox"
+   cat browser_extensions/firefox_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/firefox/manifest.json
+   cp css/shape.css $2/firefox/
+   [ -z $1 ] && touch $2/firefox/color.css || cp "css/$1" $2/firefox/color.css
+   cp "$PLUGIN" $2/firefox/plugin.js
+   mkdir -p "$2/firefox/icons"
+   cp browser_extensions/icon.png "$2/firefox/icons/icon.png"
 }
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/color_slack.css" "out/slacktheme"
+generateFiles "color_slack.css" "out/slacktheme" "Slack"
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "" "out/ghctheme"
+generateFiles "" "out/ghctheme" "GHC"
 
-generateFiles "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/shape.css" "https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/color_dark.css" "out/darktheme"
+generateFiles "color_dark.css" "out/darktheme" "Dark"
 
-rm -rf "$DEFAULTINIT" "$PLUGINGEN" "$ESCAPEDPLUGIN" "$WRAPPEDPLUGIN"
+rm -rf "$PLUGINGEN" "$PLUGINWITHCSS"

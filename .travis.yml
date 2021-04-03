@@ -6,35 +6,28 @@ before_install:
     - sudo apt-get -qq update
 
 install:
-    - sudo apt-get install p7zip-full
-
-before_script:
-    - wget https://dl.google.com/chat/latest/InstallHangoutsChat.dmg
-    - 7z x InstallHangoutsChat.dmg
-    - mkdir t
-    - sudo mount -oloop *.hfs t
+    - sudo apt-get install git p7zip-full
 
 script:
-    - ./generate_patch.sh t/Chat.app/Contents/Resources/app/main.js
-    - cd out/slacktheme && 7z a -tzip ../electron-slack.zip main.js && cd ../..
-    - cd out/darktheme && 7z a -tzip ../electron-dark.zip main.js && cd ../..
-    - cd out/ghctheme && 7z a -tzip ..//electron-ghc.zip main.js && cd ../..
+    - ./generate_patch.sh
+    - cd out/slacktheme/firefox && 7z a -tzip firefox-slack.zip * && cd ../../..
+    - cd out/ghctheme/firefox && 7z a -tzip firefox-ghc.zip * && cd ../../..
+    - cd out/darktheme/firefox && 7z a -tzip firefox-dark.zip * && cd ../../..
     - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
     - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
     - cp out/darktheme/gmonkeyscript.js out/gmonkeyscript-dark.js
-    - export GHCVER=`./ghc_version.sh t/Chat.app/Contents/Info.plist`
 
 deploy:
     provider: releases
     api_key: $TOKEN
     file:
-        - "out/electron-ghc.zip"
-        - "out/electron-dark.zip"
-        - "out/electron-slack.zip"
         - "out/gmonkeyscript-ghc.js"
         - "out/gmonkeyscript-slack.js"
         - "out/gmonkeyscript-dark.js"
+        - "out/ghctheme/firefox/firefox-ghc.zip"
+        - "out/darktheme/firefox/firefox-dark.zip"
+        - "out/slacktheme/firefox/firefox-slack.zip"
     skip-cleanup: true
     on:
         tags: true
-    name: Release $TRAVIS_TAG - $(date +'%Y.%m.%d') - GHC build v$GHCVER
+    name: Release $TRAVIS_TAG - $(date +'%Y.%m.%d')

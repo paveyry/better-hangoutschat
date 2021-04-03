@@ -6,9 +6,12 @@ Better Hangouts Chat
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the official Electron clients and the web version.
 
-*Note*: Google is dropping support for the Electron client in favor of using the new Chrome App.
-In order to use this plugin within the Chrome App, follow the instructions for the browser
-version of this plugin, within Chrome.
+*Note*: Google has dropped support for the Electron client in favor of using the new Chrome App.
+In order to use this plugin within the Chrome App, you can use either the javascript snippet
+within Greasemonkey or Tampermonkey in your browser, or install the custom better-hangoutschat
+browser extension (experimental).
+If you still use an old version of the Electron client, you can use the electron file from release
+v4.2.1, the latest version of better-hangoutschat supporting the Electron client.
 
 Features
 ---------
@@ -31,28 +34,12 @@ Installing from official release files
 
 - Download the latest release from the 'releases' section:
 https://github.com/paveyry/better-hangoutschat/releases
-- For the electron client: open the client at least once, then replace the official
-`main.js` with the patched one at this path:
-    - For Windows: `C:\Users\<username>\AppData\Local\Google\Hangouts Chat\resources\app\main.js`
-    - For macOS: `/Applications/Chat.app/Contents/Resources/app/main.js`
-    - For GNU/Linux: Google have not released their electron client for GNU/Linux, but you can use
-    the browser script with the web version.
-If the theme doesn't appear the first time you restart GHC, try to restart it a second time.
 
-- For the browser, just paste the `gmonkeyscript.js` script in your greasemonkey or tampermonkey
-extension
+- For the custom script using the tampermonkey (or greasemonkey) extension, just paste the 
+`gmonkeyscript.js` script in tampermonkey
+- [EXPERIMENTAL] For the dedicated browser extension, download the extension file for your browser
+and install it manually.
 
-Easy installation on macOS
---------------------------
-
-- Install the GHC client
-- Run it at least once
-- Clone this repository
-- Run the `make install` rule with the appropriate THEME variable:
-
-        THEME=<slack|ghc|dark> make install
-
-- Restart GHC
 
 Building script from source
 ----------------------------
@@ -63,24 +50,6 @@ Just run this command:
 
 The script will appear in `out`. You can now copy it in your greasemonkey or tampermonkey
 extension
-
-Building Electron Client patch from source
--------------------------------------------
-
-- Install the GHC client
-- Run it at least once (this is important)
-- Locate `main.js` in the installation directory on Windows, or in the App
- package on Mac (`/Applications/Chat.app/Contents/Resources/app/main.js`) and run this command:
-
-        ./generate_patch.sh <path/to/main.js>
-
-- The patched electron file will appear in `out`. Simply replace the initial one with 
-the patched one:
-
-        cp out/<theme>/main.js /Applications/Chat.app/Contents/Resources/app/main.js
-
-- Restart GHC. If the theme doesn't appear the first time you restart GHC, try to restart it
-a second time.
 
 Preview
 --------
