@@ -23,15 +23,51 @@
 .DWzK6d, .gb_Uf > .gb_g, .gb_Uf, .Jrbdv, .C2Jvlf {
     height: 45px;
 }
-
+.gb_qa:not(.gb_ra) .gb_Kd, .gb_gf:not(.gb_xf) {
+    padding: 0;
+}
+.gb_Ie, .gb_wf, .gb_gf {
+    height: 40px!important;
+}
+.gb_Ve button svg, .gb_Ve button img {
+    padding: 6px;
+}
 .HyiAVd, .i5PBGe .GVSFtd {
     margin-top: -5px;
+}
+.bn .bl {
+    height: calc(100vh -  36px );
+}
+
+/* Reduce height of search field in header bar */
+.gb_Ue {
+	height: 32px;
+    margin: 8px;
+}
+.gb_ff {
+    height: 33px;
+}
+.gb_of.gb_pf {
+    margin-top: -5px;
+}
+/* Height of channel header bar */
+.zmXnlc .dKv0S.dKv0S {
+    height: 40px;
+}
+.RFZYhc .kSBibe {
+    height: calc(100% - 40px);
+    top: 40px;
 }
 
 /* Chan button in header bar */
 .dKv0S .i5PBGe {
     min-height: 12px;
     padding: 4px;
+}
+/* Chan button number of members */
+.sNyyib .x1jjEb {
+    height: 13px;
+    font-size: 11px;
 }
 
 /* Reduce whitespace around New conversation button */
@@ -43,9 +79,24 @@
     padding-top: 0;
 }
 
+/* Chat/Files/Tasks tab buttons */
+.UDyRYe, .XXAR0, .wmFscd, .c0lDWe {
+    height: 14px;
+    line-height: 14px;
+}
+.ItO8Dd {
+    height: 1px;
+}
+
 /* Allow messages to display full-width */
 .bzJiD .jGyvbd .QIJiHb, .bzJiD .jGyvbd .zX644e {
     max-width: none;
+}
+
+/* Reduce sidebar width */
+.aeN.WR {
+    min-width: 270px!important;
+    max-width: 270px!important;
 }
 
 /* Reduce top and bottom padding around date */
@@ -53,9 +104,18 @@
     padding: 10px 0 0px 0;
 }
 
+/* Reduce left margin in sidebar */
+.yDIlKc .Eb3cg, .yDIlKc .nz9RLc, .W0hon .Eb3cg, .W0hon .nz9RLc, .Eb3cg {
+    padding-left: 5px;
+}
+
 /* Reduce right margin in sidebar */
-.n5yyEc {
-    margin-right: 4px;
+.yxIv1d .n5yyEc, .t5F5nf, .PL5Wwe .fh7VDd {
+    margin-right: 0;
+    padding-right: 0;
+}
+.krjOGe::-webkit-scrollbar {
+    width: 0;
 }
 
 /* Sidebar "recent" or "starred" section names text size */
@@ -270,6 +330,12 @@ img {
     padding: 4px 18px 4px 12px;
     min-height: 30px;
 }
+.zmXnlc .IEIJqd {
+    padding-top: 5px!important;
+    padding-bottom: 5px!important; 
+}
+.RnpT2b {
+    margin: 0!important;
 
 /* Reduce height of link and file previews */
 .Pj9rof { /* global block */
