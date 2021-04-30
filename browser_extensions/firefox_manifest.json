@@ -12,6 +12,7 @@
     "content_scripts": [
         {
             "matches": ["*://chat.google.com/*", "*://mail.google.com/chat/*"],
+            "all_frames": true,
             "js": ["plugin.js"],
             "css": ["shape.css", "color.css"]
         }
