@@ -1,5 +1,5 @@
 /* Sidebar color */
-.X9KLPc {
+.X9KLPc, .Xa, .IL9EXe, .Uexccd, .teTAFe, .haAclf, .CL, .aeN {
     background-color: #4d394b;
 }
 
@@ -16,7 +16,7 @@
 }
 
 /* Channel name color in sidebar */
-.t5F5nf {
+.t5F5nf, .Z6 {
     color: rgb(202, 196, 201);
 }
 
@@ -26,8 +26,12 @@
 }
 
 /* Sidebar "recent" or "starred" section names color */
-.aOHsTc {
+.aOHsTc, .WW {
+    text-transform: uppercase;
     color: rgb(202, 196, 201);
+}
+.V6 {
+    border-top: 1px solid #fff;
 }
 
 /* Sidebar Search section text color */
@@ -58,10 +62,6 @@
 /* Search menu text color */
 .Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
     color: #000;
-}
-
-.ndJi5d {
-    rgba(0,0,0,0.38);
 }
 
 /* Search menu elements colors when hovering */
