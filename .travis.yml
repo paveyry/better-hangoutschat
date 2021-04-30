@@ -11,8 +11,11 @@ install:
 script:
     - ./generate_patch.sh
     - cd out/slacktheme/firefox && 7z a -tzip firefox-slack.zip * && cd ../../..
+    - cd out/slacktheme && mv firefox chrome-slack && 7z a -tzip chrome-slack.zip chrome-slack && cd ../..
     - cd out/ghctheme/firefox && 7z a -tzip firefox-ghc.zip * && cd ../../..
+    - cd out/ghctheme && mv firefox chrome-ghc && 7z a -tzip chrome-ghc.zip chrome-ghc && cd ../..
     - cd out/darktheme/firefox && 7z a -tzip firefox-dark.zip * && cd ../../..
+    - cd out/darktheme && mv firefox chrome-dark && 7z a -tzip chrome-dark.zip chrome-dark && cd ../..
     - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
     - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
     - cp out/darktheme/gmonkeyscript.js out/gmonkeyscript-dark.js
@@ -27,6 +30,9 @@ deploy:
         - "out/ghctheme/firefox/firefox-ghc.zip"
         - "out/darktheme/firefox/firefox-dark.zip"
         - "out/slacktheme/firefox/firefox-slack.zip"
+        - "out/ghctheme/chrome-ghc.zip"
+        - "out/slacktheme/chrome-slack.zip"
+        - "out/darktheme/chrome-dark.zip"
     skip-cleanup: true
     on:
         tags: true

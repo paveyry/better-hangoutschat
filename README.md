@@ -25,9 +25,6 @@ Current features:
     - Slack colors
     - Dark theme (for lower eye strain)
 
-Former features:
-
-- Custom emojis (broken for now)
 
 Installing from official release files
 ---------------------------------------
@@ -35,10 +32,27 @@ Installing from official release files
 - Download the latest release from the 'releases' section:
 https://github.com/paveyry/better-hangoutschat/releases
 
-- For the custom script using the tampermonkey (or greasemonkey) extension, just paste the 
-`gmonkeyscript.js` script in tampermonkey
-- [EXPERIMENTAL] For the dedicated browser extension, download the extension file for your browser
-and install it manually.
+### Using the Firefox extension
+
+- Download the `better_hangouts_chat_<color>_X.X.X-fx.xpi` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
+- Open it with Firefox to install the extension and follow the instructions.
+- Enjoy
+
+### Using the Chrome extension (not signed by Google)
+
+- Download the `chrome-<color>.zip` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
+- Unzip the archive
+- In Chrome, open <chrome://extensions>
+- Click "Developer mode" at the top right-hand corner
+- Click "Load unpacked" and select the directory extracted from the zip archive
+- Enjoy
+
+### Using the javascript snippet with Tampermonkey/Greasemonkey
+
+- Download the `gmonkeyscript-<color>.js` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
+- Install Tampermonkey or Greasemonkey in your browser
+- Create a new script in the extension and paste the content of the `gmonkeyscript.js` script
+- Save, reload the GHC page and enjoy
 
 
 Building script from source
