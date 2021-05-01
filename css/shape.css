@@ -169,7 +169,7 @@
 
 /* Sidebar channels elements height */
 .LoYJxb {
-    height: 26px;
+    height: 26px !important;
 }
 
 /* Sidebar channel icons size and right padding */
