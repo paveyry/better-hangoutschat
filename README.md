@@ -4,11 +4,11 @@ Better Hangouts Chat
 ====================================
 
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
-Works with both the official Electron clients and the web version.
+Works with both the web browser version and the standalone Chrome App.
 
 *Note*: To use this plugin in the standalone GHC Chrome App, you can use either the Chrome 
-extension or the snippet for Tampermonkey (more details below). The features will apply within
-the Chrome App exactly like it would in the browser
+extension or the snippet for Tampermonkey within Chrome (more details below). The features will apply within
+the Chrome App exactly like it would in the browser.
 
 Features
 ---------
