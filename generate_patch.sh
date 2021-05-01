@@ -27,10 +27,10 @@ generateFiles() {
    cp "$PLUGIN" $2/firefox/plugin.js
    mkdir -p "$2/firefox/icons"
    cp browser_extensions/icon.png "$2/firefox/icons/icon.png"
+   cat "$2/firefox/color.css" | sed -E 's/!important;$/;/g' | sed -E 's/;$/!important;/g' > "$2/firefox/color.css"
+   cat "$2/firefox/shape.css" | sed -E 's/!important;$/;/g' | sed -E 's/;$/!important;/g' > "$2/firefox/shape.css"
 
    cp -r "$2/firefox" "$2/chrome"
-   cat "$2/chrome/color.css" | sed -E 's/!important;$/;/g' | sed -E 's/;$/!important;/g' > "$2/chrome/color.css"
-   cat "$2/chrome/shape.css" | sed -E 's/!important;$/;/g' | sed -E 's/;$/!important;/g' > "$2/chrome/shape.css"
 }
 
 generateFiles "color_slack.css" "out/slacktheme" "Slack"
