@@ -35,14 +35,14 @@ Installing from official release files
 - Open it with Firefox to install the extension and follow the instructions.
 - Enjoy
 
-<!--- ### Using the Chrome extension (not signed by Google)
+### Using the Chrome extension (not signed by Google)
 
 - Download the `chrome-<color>.zip` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
 - Unzip the archive
 - In Chrome, open <chrome://extensions>
 - Click "Developer mode" at the top right-hand corner
 - Click "Load unpacked" and select the directory extracted from the zip archive
-- Enjoy -->
+- Enjoy
 
 ### Using the javascript snippet with Tampermonkey/Greasemonkey
 
