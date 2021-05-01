@@ -6,12 +6,9 @@ Better Hangouts Chat
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the official Electron clients and the web version.
 
-*Note*: Google has dropped support for the Electron client in favor of using the new Chrome App.
-In order to use this plugin within the Chrome App, you can use either the javascript snippet
-within Greasemonkey or Tampermonkey in your browser, or install the custom better-hangoutschat
-browser extension (experimental).
-If you still use an old version of the Electron client, you can use the electron file from release
-v4.2.1, the latest version of better-hangoutschat supporting the Electron client.
+*Note*: To use this plugin in the standalone GHC Chrome App, you can use either the Chrome 
+extension or the snippet for Tampermonkey (more details below). The features will apply within
+the Chrome App exactly like it would in the browser
 
 Features
 ---------
@@ -45,6 +42,9 @@ Installing from official release files
 - Enjoy
 
 ### Using the javascript snippet with Tampermonkey/Greasemonkey
+
+*Note*: Unlike the browser extensions, the script fetches the CSS files directly from github. Therefore, it is less stable and less reactive than the
+browser extensions, but it will automatically receive CSS updates (not javascript updates).
 
 - Download the `gmonkeyscript-<color>.js` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
 - Install Tampermonkey or Greasemonkey in your browser
