@@ -141,6 +141,14 @@
     font-size: 16px;
 }
 
+/* Padding height between messages in PM */
+.XbbXmb:not(:last-child) .hu21Y {
+   margin-bottom: 0;
+}
+.XbbXmb.zzVqCe + .ajCeRb:not(.zzVqCe), .WQKmIb .ajCeRb:not(.zzVqCe) {
+    padding-top: 0;
+}
+
 /* Padding height between messages in a thread */
 .nF6pT, .dsoUjb:not(.WQKmIb) .jO0Dzb.nF6pT {
     padding-top: 4px;
