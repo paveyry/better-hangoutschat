@@ -16,18 +16,12 @@ script:
     - cd out/ghctheme && mv chrome chrome-ghc && 7z a -tzip chrome-ghc.zip chrome-ghc && cd ../..
     - cd out/darktheme/firefox && 7z a -tzip firefox-dark.zip * && cd ../../..
     - cd out/darktheme && mv chrome chrome-dark && 7z a -tzip chrome-dark.zip chrome-dark && cd ../..
-    - cp out/slacktheme/gmonkeyscript.js out/gmonkeyscript-slack.js
-    - cp out/ghctheme/gmonkeyscript.js out/gmonkeyscript-ghc.js
-    - cp out/darktheme/gmonkeyscript.js out/gmonkeyscript-dark.js
 
 deploy:
     provider: releases
     api_key: $TOKEN
     draft: true
     file:
-        - "out/gmonkeyscript-ghc.js"
-        - "out/gmonkeyscript-slack.js"
-        - "out/gmonkeyscript-dark.js"
         - "out/ghctheme/firefox/firefox-ghc.zip"
         - "out/darktheme/firefox/firefox-dark.zip"
         - "out/slacktheme/firefox/firefox-slack.zip"

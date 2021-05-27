@@ -41,16 +41,6 @@ Installing from official release files
 - Click "Load unpacked" and select the directory extracted from the zip archive
 - Enjoy
 
-### Using the javascript snippet with Tampermonkey/Greasemonkey
-
-*Note*: Unlike the browser extensions, the script fetches the CSS files directly from github. Therefore, it is less stable and less reactive than the
-browser extensions, but it will automatically receive CSS updates (not javascript updates).
-
-- Download the `gmonkeyscript-<color>.js` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
-- Install Tampermonkey or Greasemonkey in your browser
-- Create a new script in the extension and paste the content of the `gmonkeyscript.js` script
-- Save, reload the GHC page and enjoy
-
 
 Building script from source
 ----------------------------
