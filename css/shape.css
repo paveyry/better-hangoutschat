@@ -101,7 +101,13 @@
 
 /* Reduce top and bottom padding around date */
 .mCOR5e {
-    padding: 10px 0 0px 0;
+    padding: 7px 0 0px 0;
+}
+.QQodff .FvYVyf {
+    font-size: .9rem;
+}
+.mCOR5e .A2BXPe {
+    padding: 3px 0;
 }
 
 /* Reduce left margin in sidebar */
@@ -148,10 +154,19 @@
 .XbbXmb.zzVqCe + .ajCeRb:not(.zzVqCe), .WQKmIb .ajCeRb:not(.zzVqCe) {
     padding-top: 0;
 }
+.WQKmIb .auHzcc, .WQKmIb .IEIJqd {
+    max-width: inherit;
+}
 
 /* Padding height between messages in a thread */
 .nF6pT, .dsoUjb:not(.WQKmIb) .jO0Dzb.nF6pT {
-    padding-top: 4px;
+    padding-top: 2px;
+}
+.cZICLc:not(.k7nB6e) .jGyvbd > .HbQCbc:last-child, .cZICLc:not(.k7nB6e) .jGyvbd > .nF6pT:last-child, .zh742e:last-child {
+    padding-bottom: 0px;
+}
+.dsoUjb:not(.WQKmIb) {
+    padding: 0px 0;
 }
 
 /* Padding below people's names */
@@ -223,11 +238,6 @@ img {
     font-size: 1.3em !important;
 }
 
-/* Reduce top margin in thread block */
-.dsoUjb {
-    padding: 8px 0;
-}
-
 /* Reduce size of reply button */
 .dCMjy {
     width: 20px;
@@ -247,7 +257,7 @@ img {
 
 /* Reduce space between thread blocks */
 .cZICLc {
-    margin-top: 6px;
+    margin-top: 0px;
 }
 
 /* Increase boldness of usenames in conversations */
@@ -299,11 +309,6 @@ img {
 .uXftcc > .gntfhc, .CXTVff > .gntfhc {
     height: 240px;
     width: auto;
-}
-
-/* Reduce margin below lowest message in thread */
-.jGyvbd > .nF6pT:last-child, .zh742e:last-child {
-    padding-bottom: 10px;
 }
 
 /* Make inline pre look like slack's */
