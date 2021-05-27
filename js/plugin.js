@@ -1,6 +1,6 @@
 function inject(){
 
-    var chanIDreg = /.*space\/([a-zA-Z0-9-]+).*/g;
+    var chanIDreg = /.*space\/([_a-zA-Z0-9-]+).*/g;
 
     var linkFunction = function(elt) {
         if (elt.hasAttribute("linked")) {
