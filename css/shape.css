@@ -320,9 +320,10 @@ img {
 
 /* Fix emojis dimensions */
 .iiJ4W {
-    max-height: 1.2em;
-    max-width: 1.2em;
-    min-width: auto;
+	width: auto;
+}
+.Zoygqc .iiJ4W {
+	height: 24px;
 }
 
 /* Reduce size of New conv button */
