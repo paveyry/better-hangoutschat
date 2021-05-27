@@ -1,6 +1,6 @@
 sudo: required
 language: bash
-dist: trusty
+dist: bionic
 
 before_install:
     - sudo apt-get -qq update
