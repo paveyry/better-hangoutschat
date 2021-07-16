@@ -260,6 +260,12 @@ img {
     margin-top: 0px;
 }
 
+/* Reduce margin around Follow Thread button to avoid it overlapping on messages */
+.yg4pvb {
+    top: 2px;
+    right: 4px;
+}
+
 /* Increase boldness of usenames in conversations */
 .Z4BnXb {
     font-weight: 900;
