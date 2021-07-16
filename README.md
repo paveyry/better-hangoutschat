@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/paveyry/better-hangoutschat.svg?branch=master)](https://github.com/paveyry/better-hangoutschat/releases/latest)
+[![Build Status](https://travis-ci.com/paveyry/better-hangoutschat.svg?branch=master)](https://travis-ci.com/paveyry/better-hangoutschat)
 
 Better Hangouts Chat
 ====================================
@@ -49,8 +49,7 @@ Just run this command:
 
     ./generate_patch.sh
 
-The script will appear in `out`. You can now copy it in your greasemonkey or tampermonkey
-extension
+The output will appear in the `out` directory.
 
 Preview
 --------
