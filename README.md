@@ -6,9 +6,13 @@ Better Hangouts Chat
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the web browser version and the standalone Chrome App.
 
-*Note*: To use this plugin in the standalone GHC Chrome App, you can use either the Chrome 
-extension or the snippet for Tampermonkey within Chrome (more details below). The features will apply within
-the Chrome App exactly like it would in the browser.
+In order to use the dark theme, GMail or GHC should already be in dark mode.
+In order to use the light theme, GMail or GHC should already be in light (default) mode.
+This plugin will alter some of the color-scheme but relies on the existing color modes.
+
+*Note*: To use this plugin in the standalone GHC Chrome App, you can use the Chrome 
+version of the extension within Chrome (more details below). The features will apply within
+the Chrome App exactly like they would in the browser.
 
 Features
 ---------
@@ -17,11 +21,9 @@ Current features:
 
 - Smaller margins and buttons for better readability and screen space optimization
 - Thread-link buttons at the top of each thread for easier referencing
-- Several different color schemes:
-    - GHC standard colors
-    - Slack colors
-    - Dark theme (for lower eye strain)
-
+- Several different variants:
+    - Light theme (Chat standard colors)
+    - Dark theme
 
 Installing from official release files
 ---------------------------------------
@@ -64,8 +66,5 @@ Click on the *Show Thread Links* button and thread links will appear before each
 ### Dark Theme
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63685721-01f28a80-c7f8-11e9-8522-75446596d574.png)
 
-### Slack Theme
-![Screenshot](https://user-images.githubusercontent.com/3884900/63689984-6c5cf800-c803-11e9-864e-ec578353b946.png)
-
-### GHC Theme
+### Light Theme
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63689983-6c5cf800-c803-11e9-8857-53326ec1d22b.png)
