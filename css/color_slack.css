@@ -10,6 +10,11 @@
     background-color: #3e313c;
 }
 
+/* Sidebar elemtents bg color when active */
+.PL5Wwe:active:not(.dQ2Tsf), .IL9EXe.PL5Wwe.dHI9xe.qs41qe {
+    background-color: #261c25;
+}
+
 /* Sidebar elements text color for chans with unread messages */
 .PL5Wwe.H7du2 .t5F5nf {
     color: #fff;
