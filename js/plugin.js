@@ -16,14 +16,33 @@ function inject(){
         chanIDreg.lastIndex = 0;
         if (match != null) {
             var tmpdiv = document.createElement("div");
-            var link = "https://mail.google.com/chat/u/0/#chat/space/"+match[1]+"/"+elt.getAttribute("data-topic-id");
+            var link = "https://mail.google.com/mail/u/0/#chat/space/"+match[1]+"/"+elt.getAttribute("data-topic-id");
             link = link.replace("search/", "");
             // Remove the /u/[0-9] from the link, which is bad when sharing links because it
             // could try to open the link with their non-default Google account.
             link = link.replace(/\/u\/\d/, "");
-            tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link:</a> '+link;
-            elt.setAttribute("linked", "");
-            elt.insertBefore(tmpdiv.childNodes[0], elt.childNodes[0]);
+            tmpdiv.innerHTML = '<p class="threadlink"><a href="'+link+'">Link: </a> '+link+' </p>';
+            var copyLink = document.createElement("a");
+            copyLink.className = "linkcpy";
+            copyLink.setAttribute("link", link);
+            copyLink.innerText = "(COPY TO CLIPBOARD)";
+            copyLink.setAttribute("linked", "");
+            copyLink.addEventListener("click", function() {
+                const valelt = document.createElement('textarea');
+                valelt.value = link;
+                document.body.appendChild(valelt);
+                valelt.select();
+                document.execCommand('copy');
+                document.body.removeChild(valelt);
+                copyLink.innerText = "(COPIED TO CLIPBOARD)";
+                copyLink.style.color = 'green';
+                setTimeout(function(){
+                    copyLink.innerText = "(COPY TO CLIPBOARD)";
+                    copyLink.style.color = "var(--primary-app-color)";
+                    }, 3000);
+            });
+            tmpdiv.childNodes[0].appendChild(copyLink);
+            elt.insertBefore(tmpdiv, elt.childNodes[0]);
         }
     };
 
