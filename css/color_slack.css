@@ -1,0 +1,124 @@
+/* Sidebar color */
+.X9KLPc, .Xa, .IL9EXe, .Uexccd, .teTAFe, .haAclf, .CL, .aeN {
+    background-color: #4d394b;
+}
+
+/* Sidebar elemtents bg color when hovering */
+.PL5Wwe:focus:not(.dQ2Tsf),
+.PL5Wwe:hover:not(.dQ2Tsf),
+.tuKyod .LoYJxb {
+    background-color: #3e313c;
+}
+
+/* Sidebar elements text color for chans with unread messages */
+.PL5Wwe.H7du2 .t5F5nf {
+    color: #fff;
+}
+
+/* Channel name color in sidebar */
+.t5F5nf, .Z6 {
+    color: rgb(202, 196, 201);
+}
+
+/* Sidebar channel icons */
+.SwwApf, .SwwApf.qkl0pe {
+    background-color: #3e313c;
+}
+
+/* Sidebar "recent" or "starred" section names color */
+.aOHsTc, .WW {
+    text-transform: uppercase;
+    color: rgb(202, 196, 201);
+}
+.V6 {
+    border-top: 1px solid #fff;
+}
+
+/* Sidebar Search section text color */
+.HLTcjb {
+    color: rgb(202, 196, 201);
+}
+.D3DXDc {
+    fill: rgb(202, 196, 201) !important;
+}
+
+/* Sidebar search button hovering bg color */
+.GbZFNe:focus, .GbZFNe:hover {
+    background-color: #3e313c;
+}
+
+/* Sidebar search button shadow */
+.d6pS5 {
+    box-shadow: 0 5px 5px -2px #3e313c;
+    padding-bottom: 0;
+
+}
+
+/* Search Menu bg color */
+.yoV6yd {
+    background-color: #4d394b;
+}
+
+/* Search menu text color */
+.Uk0Bfe .zHQkBf, .Uk0Bfe .snByac, .dQ2Tsf .NXfF8b, .dQ2Tsf .ZTmjQb {
+    color: #000;
+}
+
+/* Search menu elements colors when hovering */
+.dQ2Tsf[aria-selected="true"], .PL5Wwe:hover > .dQ2Tsf {
+    background-color: #eee;
+    color: #fff
+}
+
+/* Search menu people list mail color */
+.dQ2Tsf[aria-selected="true"] .Kfe2Ub, .PL5Wwe:hover > .dQ2Tsf .Kfe2Ub {
+    color: #000;
+}
+
+/* Top left corner section (with title) background color */
+.Riuhhf {
+    background-color: #4d394b;
+}
+
+/* Chat top left logo text color */
+#XMLID_8_-Clipped{
+    opacity: 0.8 !important;
+    fill: #fff !important;
+}
+
+/* Notifications active/disabled status button */
+.gWTIDe {
+    color: rgb(202, 196, 201);
+}
+
+/* Time and menu buttons and clock for channels inactive and active colors */
+.sFuxxd {
+    color: rgb(202, 196, 201);
+}
+.PL5Wwe.H7du2 .sFuxxd {
+    color: #fff;
+}
+.DQy0Rb {
+    fill: rgb(202, 196, 201) !important;
+}
+.PL5Wwe.H7du2 .DQy0Rb {
+    fill: #fff !important;
+}
+.QeRfYe {
+    fill: rgb(202, 196, 201) !important;
+}
+.PL5Wwe.H7du2 .QeRfYe {
+    fill: #fff !important;
+}
+
+/* Make code snippets have slack colors */
+.FMTudf, .Zc1Emd div {
+    border: 1px solid #e0e0e0!important;
+    background: #f9f9f9!important;
+}
+
+/* Make inline pre have slack colors */
+.U8d2H, .Zc1Emd span:not(.NhKrqd):not(.fWwrkf) {
+    background-color: #f7f7f9!important;
+    color: #d72b3f!important;
+}

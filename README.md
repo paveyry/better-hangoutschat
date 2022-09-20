@@ -23,6 +23,7 @@ Current features:
 - Thread-link buttons at the top of each thread for easier referencing
 - Several different variants:
     - Light theme (Chat standard colors)
+    - Slack theme
     - Dark theme
 
 Installing from official release files
@@ -65,6 +66,9 @@ Click on the *Show Thread Links* button and thread links will appear before each
 
 ### Dark Theme
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63685721-01f28a80-c7f8-11e9-8522-75446596d574.png)
+
+### Slack Theme
+![Screenshot](https://user-images.githubusercontent.com/3884900/63689984-6c5cf800-c803-11e9-864e-ec578353b946.png)
 
 ### Light Theme
 ![Screenshot](https://user-images.githubusercontent.com/3884900/63689983-6c5cf800-c803-11e9-8857-53326ec1d22b.png)
