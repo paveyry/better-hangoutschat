@@ -31,13 +31,13 @@ Installing from official release files
 
 ### Using the Firefox extension (recommended)
 
-- Download the `better_hangouts_chat_<color>_X.X.X-fx.xpi` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
+- Download the `firefox-better_hangouts_chat_<theme>_X.X.X.xpi` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
 - Open it with Firefox to install the extension and follow the instructions.
 - Enjoy
 
 ### Using the Chrome extension (not signed by Google)
 
-- Download the `chrome-<color>.zip` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
+- Download the `chrome-better_hangouts_chat_<theme>_X.X.X..zip` file of your choice from the 'releases' section: <https://github.com/paveyry/better-hangoutschat/releases>
 - Unzip the archive
 - In Chrome, open <chrome://extensions>
 - Click "Developer mode" at the top right-hand corner
