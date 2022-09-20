@@ -8,6 +8,9 @@ PLUGIN="$(mktemp)"
 CSSINSERTCODE="$(mktemp)"
 PLUGINWITHCSS="$(mktemp)"
 URL="https:\/\/raw.githubusercontent.com\/paveyry\/better-hangoutschat\/master\/css\/COLOR"
+if [ $OSTYPE == *"linux"* ]; then
+   POSIXFLAG="--posix"
+fi
 
 generateFiles() {
    mkdir -p "$2"
@@ -27,8 +30,8 @@ generateFiles() {
    cp "$PLUGIN" $2/firefox/plugin.js
    mkdir -p "$2/firefox/icons"
    cp browser_extensions/icon.png "$2/firefox/icons/icon.png"
-   cat "$2/firefox/color.css" | sed --posix 's/.important;$/;/g' | sed --posix 's/;$/!important;/g' > "$2/firefox/color2.css"
-   cat "$2/firefox/shape.css" | sed --posix 's/.important;$/;/g' | sed --posix 's/;$/!important;/g' > "$2/firefox/shape2.css"
+   cat "$2/firefox/color.css" | sed $POSIXFLAG 's/.important;$/;/g' | sed $POSIXFLAG 's/;$/!important;/g' > "$2/firefox/color2.css"
+   cat "$2/firefox/shape.css" | sed $POSIXFLAG 's/.important;$/;/g' | sed $POSIXFLAG 's/;$/!important;/g' > "$2/firefox/shape2.css"
    mv "$2/firefox/shape2.css" "$2/firefox/shape.css" && mv "$2/firefox/color2.css" "$2/firefox/color.css"
 
    cp -r "$2/firefox" "$2/chrome"
