@@ -39,7 +39,7 @@ generateFiles() {
 
 generateFiles "color_slack.css" "out/slacktheme" "Slack"
 
-generateFiles "" "out/ghctheme" "GHC"
+generateFiles "" "out/lighttheme" "Light"
 
 generateFiles "color_dark.css" "out/darktheme" "Dark"
 

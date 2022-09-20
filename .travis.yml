@@ -12,8 +12,8 @@ script:
     - ./generate_patch.sh
     - cd out/slacktheme/firefox && 7z a -tzip firefox-slack.zip * && cd ../../..
     - cd out/slacktheme && mv chrome chrome-slack && 7z a -tzip chrome-slack.zip chrome-slack && cd ../..
-    - cd out/ghctheme/firefox && 7z a -tzip firefox-ghc.zip * && cd ../../..
-    - cd out/ghctheme && mv chrome chrome-ghc && 7z a -tzip chrome-ghc.zip chrome-ghc && cd ../..
+    - cd out/lighttheme/firefox && 7z a -tzip firefox-light.zip * && cd ../../..
+    - cd out/lighttheme && mv chrome chrome-light && 7z a -tzip chrome-light.zip chrome-light && cd ../..
     - cd out/darktheme/firefox && 7z a -tzip firefox-dark.zip * && cd ../../..
     - cd out/darktheme && mv chrome chrome-dark && 7z a -tzip chrome-dark.zip chrome-dark && cd ../..
 
@@ -22,10 +22,10 @@ deploy:
     api_key: $TOKEN
     draft: true
     file:
-        - "out/ghctheme/firefox/firefox-ghc.zip"
+        - "out/lighttheme/firefox/firefox-light.zip"
         - "out/darktheme/firefox/firefox-dark.zip"
         - "out/slacktheme/firefox/firefox-slack.zip"
-        - "out/ghctheme/chrome-ghc.zip"
+        - "out/lighttheme/chrome-light.zip"
         - "out/slacktheme/chrome-slack.zip"
         - "out/darktheme/chrome-dark.zip"
     skip-cleanup: true
