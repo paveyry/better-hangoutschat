@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
       - name: intall p7zip-full
         run: sudo apt-get install git p7zip-full
 
