@@ -23,7 +23,7 @@ jobs:
         with:
           draft: true
           prerelease: false
-          release_name: Release ${{ github.ref }}
+          release_name: Release ${{ github.ref }} - $(date +'%Y.%m.%d')
           tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
