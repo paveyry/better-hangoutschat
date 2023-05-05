@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/paveyry/better-hangoutschat.svg?branch=master)](https://travis-ci.com/paveyry/better-hangoutschat)
+![Build Status](https://github.com/paveyry/better-hangoutschat/actions/workflows/build.yml/badge.svg)
 
 Better Hangouts Chat
 ====================================
