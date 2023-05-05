@@ -1,0 +1,86 @@
+name: Better Hangouts Chat build
+run-name: ${{ github.actor }} is building Better Hangouts Chat
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: intall p7zip-full
+        run: sudo apt-get install git p7zip-full
+
+      - name: build and pack
+        run: "sh -c './generate_patch.sh && ./package_extensions.sh'"
+
+      - name: release 
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: true
+          prerelease: false
+          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: upload firefox light file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/lighttheme/firefox/firefox-light.zip
+          asset_name: firefox-light.zip
+          asset_content_type: application/zip
+
+      - name: upload firefox dark file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/darktheme/firefox/firefox-dark.zip
+          asset_name: firefox-dark.zip
+          asset_content_type: application/zip
+          
+      - name: upload firefox slack file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/slacktheme/firefox/firefox-slack.zip
+          asset_name: firefox-slack.zip
+          asset_content_type: application/zip
+      
+      - name: upload chrome light file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/lighttheme/chrome-light.zip
+          asset_name: chrome-light.zip
+          asset_content_type: application/zip
+
+      - name: upload chrome dark file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/darktheme/chrome-dark.zip
+          asset_name: chrome-dark.zip
+          asset_content_type: application/zip
+          
+      - name: upload chrome slack file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/slacktheme/chrome-slack.zip
+          asset_name: chrome-slack.zip
+          asset_content_type: application/zip
