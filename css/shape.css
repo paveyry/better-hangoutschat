@@ -404,5 +404,7 @@ img {
 
 /* Side thread channel width */
 .ekM2ie.eO2Zfd {
-    max-width: 45%;
+    width: 45% !important;
+    max-width: auto !important;
+    min-width: 300px;
 }
