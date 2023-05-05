@@ -361,6 +361,7 @@ img {
 }
 .RnpT2b {
     margin: 0!important;
+}
 
 /* Reduce height of link and file previews */
 .Pj9rof { /* global block */
@@ -405,6 +406,6 @@ img {
 /* Side thread channel width */
 .ekM2ie.eO2Zfd {
     width: 45% !important;
-    max-width: auto !important;
+    max-width: 45% !important;
     min-width: 300px;
 }
