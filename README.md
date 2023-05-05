@@ -20,6 +20,7 @@ Features
 Current features: 
 
 - Smaller margins and buttons for better readability and screen space optimization
+- Wider and more adaptive thread right-side panel
 - Thread-link buttons at the top of each thread for easier referencing
 - Several different variants:
     - Light theme (Chat standard colors)
