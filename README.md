@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/paveyry/better-hangoutschat/actions/workflows/build.yml/badge.svg)
 
-Better Hangouts Chat
-====================================
+Better Google Spaces (former Hangouts Chat)
+======================================================
 
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the web browser version and the standalone Chrome App.
