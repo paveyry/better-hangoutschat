@@ -20,10 +20,6 @@ jobs:
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
 
-      - name: Get the version
-        id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
-
       - name: Add Firefox Dark Extension ID
         run: "sh -c './add_gecko_id.sh out/slacktheme/firefox/manifest.json ${{ secrets.FF_DARK_ID }}'"
  
@@ -39,7 +35,7 @@ jobs:
         with:
           draft: true
           prerelease: false
-          release_name: Release ${{ github.get_version.outputs.VERSION }} - ${{ env.NOW }}
+          release_name: Release ${{ github.ref_name }} - ${{ env.NOW }}
           tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -51,7 +47,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./out/lighttheme/chrome-light.zip
-          asset_name: chrome-better_hangouts_chat_light-${{ github.get_version.outputs.VERSION }}.zip
+          asset_name: chrome-better_hangouts_chat_light-${{ github.ref_name }}.zip
           asset_content_type: application/zip
 
       - name: upload chrome dark file
@@ -61,7 +57,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./out/darktheme/chrome-dark.zip
-          asset_name: chrome-better_hangouts_chat_dark-${{ github.get_version.outputs.VERSION }}.zip
+          asset_name: chrome-better_hangouts_chat_dark-${{ github.ref_name }}.zip
           asset_content_type: application/zip
           
       - name: upload chrome slack file
@@ -71,8 +67,38 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./out/slacktheme/chrome-slack.zip
-          asset_name:  chrome-better_hangouts_chat_slack-${{ github.get_version.outputs.VERSION }}.zip 
+          asset_name:  chrome-better_hangouts_chat_slack-${{ github.ref_name }}.zip 
           asset_content_type: application/zip
+
+      - name: "firefox-slack web-ext build"
+        id: ff-build-slack
+        uses: kewisch/action-web-ext@v1
+        with:
+          cmd: build
+          source: out/slacktheme/firefox
+
+      - name: check name
+        run: cat out/slacktheme/firefox/manifest.json
+
+      - name: "firefox-slack web-ext sign"
+        id: ff-sign-slack
+        uses: kewisch/action-web-ext@v1
+        with:
+          cmd: sign
+          source: ${{ steps.ff-build-slack.outputs.target }}
+          channel: unlisted
+          apiKey: ${{ secrets.AMO_SIGN_KEY }}
+          apiSecret: ${{ secrets.AMO_SIGN_SECRET }}
+          timeout: 900000
+
+      - name: upload firefox slack file
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.ff-sign-slack.outputs.target }}
+          asset_name: firefox-better_hangouts_chat_slack-${{ github.ref_name }}.zip
 
       - name: "firefox-light web-ext build"
         id: ff-build-light
@@ -99,7 +125,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ steps.ff-sign-light.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_light-${{ github.get_version.outputs.VERSION }}.zip
+          asset_name: firefox-better_hangouts_chat_light-${{ github.ref_name }}.zip
           asset_content_type: application/zip
 
       - name: "firefox-dark web-ext build"
@@ -127,32 +153,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ steps.ff-sign-dark.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_dark-${{ github.get_version.outputs.VERSION }}.zip
+          asset_name: firefox-better_hangouts_chat_dark-${{ github.ref_name }}.zip
           asset_content_type: application/zip
-
-      - name: "firefox-slack web-ext build"
-        id: ff-build-slack
-        uses: kewisch/action-web-ext@v1
-        with:
-          cmd: build
-          source: out/slacktheme/firefox
-
-      - name: "firefox-slack web-ext sign"
-        id: ff-sign-slack
-        uses: kewisch/action-web-ext@v1
-        with:
-          cmd: sign
-          source: ${{ steps.ff-build-slack.outputs.target }}
-          channel: unlisted
-          apiKey: ${{ secrets.AMO_SIGN_KEY }}
-          apiSecret: ${{ secrets.AMO_SIGN_SECRET }}
-          timeout: 900000
-
-      - name: upload firefox slack file
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ steps.ff-sign-slack.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_slack-${{ github.get_version.outputs.VERSION }}.zip
