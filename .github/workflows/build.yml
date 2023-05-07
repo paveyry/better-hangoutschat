@@ -95,8 +95,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ steps.ff-sign-light.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_light-${{ github.ref_name }}.zip
-          asset_content_type: application/zip
+          asset_name: firefox-better_hangouts_chat_light-${{ github.ref_name }}.xpi
 
       - name: "firefox-dark web-ext build"
         id: ff-build-dark
@@ -123,8 +122,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ steps.ff-sign-dark.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_dark-${{ github.ref_name }}.zip
-          asset_content_type: application/zip
+          asset_name: firefox-better_hangouts_chat_dark-${{ github.ref_name }}.xpi
 
       - name: "firefox-slack web-ext build"
         id: ff-build-slack
@@ -151,4 +149,4 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ steps.ff-sign-slack.outputs.target }}
-          asset_name: firefox-better_hangouts_chat_slack-${{ github.ref_name }}.zip
+          asset_name: firefox-better_hangouts_chat_slack-${{ github.ref_name }}.xpi
