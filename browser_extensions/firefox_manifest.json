@@ -16,6 +16,10 @@
             "js": ["plugin.js"],
             "css": ["shape.css", "color.css"]
         }
-    ]
-
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{GECKO_ID}"
+        }
+    }
 }
