@@ -139,8 +139,8 @@ function inject(){
     var exitButton = document.querySelector("div[jsname='bJFgVc']");
     if (exitButton != null) {
         addResizeButton(exitButton);
-        insertionQ('.U26fgb').every(addResizeButton);
     }
+    insertionQ('.U26fgb').every(addResizeButton);
 
 // INSERTCSS
 }
