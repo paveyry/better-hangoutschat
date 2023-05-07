@@ -78,7 +78,7 @@ jobs:
           source: out/slacktheme/firefox
 
       - name: check name
-        run: cat out/slacktheme/firefox/manifest.json
+        run: cat out/slacktheme/firefox/manifest.json | sed "s/-/_/g"
 
       - name: "firefox-slack web-ext sign"
         id: ff-sign-slack
