@@ -24,7 +24,6 @@ generateFiles() {
 
    VERSION="$(git tag | tail -n 1 | cut -c2-)"
    mkdir -p "$2/firefox"
-   cat browser_extensions/firefox_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/firefox/manifest.json
    cp css/shape.css $2/firefox/
    [ -z $1 ] && touch $2/firefox/color.css || cp "css/$1" $2/firefox/color.css
    cp "$PLUGIN" $2/firefox/plugin.js
@@ -35,6 +34,8 @@ generateFiles() {
    mv "$2/firefox/shape2.css" "$2/firefox/shape.css" && mv "$2/firefox/color2.css" "$2/firefox/color.css"
 
    cp -r "$2/firefox" "$2/chrome"
+   cat browser_extensions/firefox_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/firefox/manifest.json
+   cat browser_extensions/chrome_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/chrome/manifest.json
 }
 
 generateFiles "color_slack.css" "out/slacktheme" "Slack"

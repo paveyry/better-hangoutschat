@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Better Hangouts Chat - COLOR",
+    "version": "VERSION",
+    "homepage_url": "https://github.com/paveyry/better-hangoutschat",
+    "description": "Themes and Thread Links in Google Hangouts Chat",
+
+    "icons": {
+        "48": "icons/icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://chat.google.com/*", "*://mail.google.com/chat/*"],
+            "all_frames": true,
+            "js": ["plugin.js"],
+            "css": ["shape.css", "color.css"]
+        }
+    ]
+}
