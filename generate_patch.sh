@@ -33,7 +33,7 @@ generateFiles() {
    cat "$2/firefox/shape.css" | sed $POSIXFLAG 's/.important;$/;/g' | sed $POSIXFLAG 's/;$/!important;/g' > "$2/firefox/shape2.css"
    mv "$2/firefox/shape2.css" "$2/firefox/shape.css" && mv "$2/firefox/color2.css" "$2/firefox/color.css"
 
-   cp -r "$2/firefox" "$2/chrome"
+   rsync -r "$2/firefox/" "$2/chrome"
    cat browser_extensions/firefox_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/firefox/manifest.json
    cat browser_extensions/chrome_manifest.json | sed "s/VERSION/$VERSION/g" | sed "s/COLOR/$3/g" > $2/chrome/manifest.json
 }
