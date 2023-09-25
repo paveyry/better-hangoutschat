@@ -224,6 +224,25 @@ svg.GfYBMd.Kol3Vd.V3Pk2 {
     max-width: 100%;
 }
 
+/* Left-align all message bubbles */
+.nF6pT.yqoUIf.Fxfmxb .oGsu4 {
+    all: initial;
+}
+
+/* Reaction buttons left align */
+.nF6pT.yqoUIf .UgwGlb {
+    float: left;
+    justify-content: left;
+}
+.nF6pT.yqoUIf.Fxfmxb .YJxKBc {
+    align-items: baseline !important;
+}
+
+/* Reaction button add always visible */
+.cmEq8b .xHWT7d {
+    opacity: 100%;
+}
+
 /* Vertically align triple dots buttons on
 channels in sidebar with the new height */
 .MhXXcc {
