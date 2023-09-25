@@ -219,6 +219,11 @@ svg.GfYBMd.Kol3Vd.V3Pk2 {
     font-size: .67rem;
 }
 
+/* Remove messenger-style conversations */
+.nF6pT.yqoUIf .B8q9Gf {
+    max-width: 100%;
+}
+
 /* Vertically align triple dots buttons on
 channels in sidebar with the new height */
 .MhXXcc {
