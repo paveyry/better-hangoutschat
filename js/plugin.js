@@ -88,7 +88,9 @@ function inject(){
 
         var linkButton = sb;//.parentElement;
         var button = document.createElement("div");
-        button.innerHTML = '<div id="resizeButton"><div class="U26fgb mUbCce fKz7Od Rb5ixf M9Bg4d" title="Resize thread panel"><span class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 3v18"/></svg></span></span></div></div>';
+        button.innerHTML = '<div id="resizeButton"><div class="U26fgb mUbCce fKz7Od hA9Mmb M9Bg4d" title="Resize thread panel">' +
+            '<span class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--icon-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+            '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 3v18"/></svg></span></span></div></div>';
         linkButton.parentElement.insertBefore(button.childNodes[0], linkButton);
         document.getElementById('resizeButton').addEventListener('click', event => {
             var sizepos = parseInt(sessionStorage.getItem("sizepos"), 10);
@@ -116,7 +118,10 @@ function inject(){
 
         var searchButton = sb.parentElement;
         var button = document.createElement("div");
-        button.innerHTML = '<div id="displayLinkButton"><div class="U26fgb mUbCce fKz7Od" title="Show thread links"><span class="xjKiLb"><span style="top: -12px"><svg viewBox="0 0 16 16" class="GfYBMd Kol3Vd V3Pk2">  <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path><path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path></svg></span></span></div></div>';
+        button.innerHTML = '<div id="displayLinkButton"><div class="U26fgb mUbCce fKz7Od" title="Show thread links"><span class="xjKiLb"><span style="top: -12px">' +
+            '<svg viewBox="0 0 16 16" class="GfYBMd Kol3Vd V3Pk2 iNfgyc">  ' +
+            '<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path>' +
+            '<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path></svg></span></span></div></div>';
         searchButton.parentElement.insertBefore(button.childNodes[0], searchButton);
         document.getElementById('displayLinkButton').addEventListener('click', event => {
             var topics = document.getElementsByClassName('cZICLc');
