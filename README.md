@@ -1,7 +1,14 @@
-![Build Status](https://github.com/paveyry/better-hangoutschat/actions/workflows/build.yml/badge.svg)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-Better Google Spaces (former Hangouts Chat)
-======================================================
+[DEPRECATED] Better Google Spaces (former Hangouts Chat)
+========================================================
+
+> [!CAUTION]
+> **Deprecated repository**: While still very bloated, slow, and cursed with terrible
+> UI, GHC has become somewhat bearable over the years and has implemented some of
+> the features that this plugin was offering. Furthermore, Google keeps breaking
+> this plugin because all the CSS classes get frequently renamed. Therefore,
+> I have stopped maintaining this and I am only keeping it here for archival.
 
 This patch extends Google Hangouts Chat to make it nicer and simpler to use.
 Works with both the web browser version and the standalone Chrome App.
@@ -10,14 +17,14 @@ In order to use the dark theme, GMail or GHC should already be in dark mode.
 In order to use the light theme, GMail or GHC should already be in light (default) mode.
 This plugin will alter some of the color-scheme but relies on the existing color modes.
 
-*Note*: To use this plugin in the standalone GHC Chrome App, you can use the Chrome 
+*Note*: To use this plugin in the standalone GHC Chrome App, you can use the Chrome
 version of the extension within Chrome (more details below). The features will apply within
 the Chrome App exactly like they would in the browser.
 
 Features
 ---------
 
-Current features: 
+Current features:
 
 - Smaller margins and buttons for better readability and screen space optimization
 - Resizable right-side thread panel
